@@ -18,7 +18,7 @@ After initial setup, the device operates in a way that allows firmware updates w
 
 ### 1. Initial Factory Programming
 
-**Program the Bootloader with Fuses**: Program the device once using the bootloader with fuses to set up the required configurations for future live updates. This project is located within the e51_uart_fail_safe_bootloader folder and can be opened with e51_uart_fail_safe_bootloader\hex\sam_e51_cnano.X.production_fuses.hex
+**Program the Bootloader with Fuses**: Program the device once using the bootloader with fuses to set up the required configurations for future live updates. This project is located within the e51_uart_fail_safe_bootloader folder and can be opened with e51_uart_fail_safe_bootloader\hex\sam_e51_cnano.X.production_fuses.hex. Program the .hex on to the Nano. Subsequent application updates can be applied without reprogramming fuses and this step is no longer needed.
 
 #### Merging Bootloader and Application
 
@@ -54,10 +54,6 @@ Use the live_update.py script to program a copy of the bootloader and live updat
 ``` bash
 python live_update.py -v -i COM5 -d same5x -a 0x00080000 -f btl_app_merged.bin
 ```
-
-## Future Firmware Updates
-
-Subsequent application updates can be applied without reprogramming fuses:
 
 # Run the Live Update
 
