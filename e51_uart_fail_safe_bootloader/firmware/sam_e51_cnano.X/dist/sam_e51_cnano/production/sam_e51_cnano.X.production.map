@@ -102,7 +102,7 @@ Discarded input sections
                 0x0000000000000000       0x48 build/sam_e51_cnano/production/_ext/831051564/plib_cmcc.o
  .debug_ranges  0x0000000000000000       0x38 build/sam_e51_cnano/production/_ext/831051564/plib_cmcc.o
  .debug_line    0x0000000000000000      0x225 build/sam_e51_cnano/production/_ext/831051564/plib_cmcc.o
- .debug_str     0x0000000000000000      0x3bc build/sam_e51_cnano/production/_ext/831051564/plib_cmcc.o
+ .debug_str     0x0000000000000000      0x3d7 build/sam_e51_cnano/production/_ext/831051564/plib_cmcc.o
  .comment       0x0000000000000000       0x2c build/sam_e51_cnano/production/_ext/831051564/plib_cmcc.o
  .debug_frame   0x0000000000000000       0x70 build/sam_e51_cnano/production/_ext/831051564/plib_cmcc.o
  .ARM.attributes
@@ -642,21 +642,21 @@ LOAD stack
  .debug_line    0x00000000000025be       0xf5 build/sam_e51_cnano/production/_ext/570918426/startup_xc32.o
  .debug_line    0x00000000000026b3      0x151 build/sam_e51_cnano/production/_ext/1360937237/main.o
 
-.debug_str      0x0000000000000000     0x57e5
- .debug_str     0x0000000000000000      0x5e7 build/sam_e51_cnano/production/_ext/48416434/bootloader_uart.o
- .debug_str     0x00000000000005e7      0x8ee build/sam_e51_cnano/production/_ext/48416434/bootloader_common.o
- .debug_str     0x0000000000000ed5      0x679 build/sam_e51_cnano/production/_ext/7187140/plib_clock.o
- .debug_str     0x000000000000154e      0x444 build/sam_e51_cnano/production/_ext/1220119036/plib_dsu.o
- .debug_str     0x0000000000001992      0x2d5 build/sam_e51_cnano/production/_ext/9336626/plib_evsys.o
- .debug_str     0x0000000000001c67      0xc4e build/sam_e51_cnano/production/_ext/830715028/plib_nvic.o
- .debug_str     0x00000000000028b5      0x6d6 build/sam_e51_cnano/production/_ext/226030394/plib_nvmctrl.o
- .debug_str     0x0000000000002f8b      0x8d7 build/sam_e51_cnano/production/_ext/1220129992/plib_pac.o
- .debug_str     0x0000000000003862      0x8e7 build/sam_e51_cnano/production/_ext/830661877/plib_port.o
- .debug_str     0x0000000000004149      0x8da build/sam_e51_cnano/production/_ext/314480351/plib_sercom5_usart.o
- .debug_str     0x0000000000004a23      0x432 build/sam_e51_cnano/production/_ext/8444704/plib_systick.o
- .debug_str     0x0000000000004e55      0x389 build/sam_e51_cnano/production/_ext/570918426/initialization.o
- .debug_str     0x00000000000051de      0x31a build/sam_e51_cnano/production/_ext/570918426/startup_xc32.o
- .debug_str     0x00000000000054f8      0x2ed build/sam_e51_cnano/production/_ext/1360937237/main.o
+.debug_str      0x0000000000000000     0x595f
+ .debug_str     0x0000000000000000      0x602 build/sam_e51_cnano/production/_ext/48416434/bootloader_uart.o
+ .debug_str     0x0000000000000602      0x909 build/sam_e51_cnano/production/_ext/48416434/bootloader_common.o
+ .debug_str     0x0000000000000f0b      0x694 build/sam_e51_cnano/production/_ext/7187140/plib_clock.o
+ .debug_str     0x000000000000159f      0x45f build/sam_e51_cnano/production/_ext/1220119036/plib_dsu.o
+ .debug_str     0x00000000000019fe      0x2f0 build/sam_e51_cnano/production/_ext/9336626/plib_evsys.o
+ .debug_str     0x0000000000001cee      0xc69 build/sam_e51_cnano/production/_ext/830715028/plib_nvic.o
+ .debug_str     0x0000000000002957      0x6f1 build/sam_e51_cnano/production/_ext/226030394/plib_nvmctrl.o
+ .debug_str     0x0000000000003048      0x8f2 build/sam_e51_cnano/production/_ext/1220129992/plib_pac.o
+ .debug_str     0x000000000000393a      0x902 build/sam_e51_cnano/production/_ext/830661877/plib_port.o
+ .debug_str     0x000000000000423c      0x8f5 build/sam_e51_cnano/production/_ext/314480351/plib_sercom5_usart.o
+ .debug_str     0x0000000000004b31      0x44d build/sam_e51_cnano/production/_ext/8444704/plib_systick.o
+ .debug_str     0x0000000000004f7e      0x3a4 build/sam_e51_cnano/production/_ext/570918426/initialization.o
+ .debug_str     0x0000000000005322      0x335 build/sam_e51_cnano/production/_ext/570918426/startup_xc32.o
+ .debug_str     0x0000000000005657      0x308 build/sam_e51_cnano/production/_ext/1360937237/main.o
 
 .comment        0x0000000000000000       0x2b
  .comment       0x0000000000000000       0x2b build/sam_e51_cnano/production/_ext/48416434/bootloader_uart.o
