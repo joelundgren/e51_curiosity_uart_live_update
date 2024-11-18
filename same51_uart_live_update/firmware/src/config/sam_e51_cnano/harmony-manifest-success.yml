@@ -4,10 +4,10 @@
 
 
 project: same51_uart_live_update
-creation_date: 2024-11-09T17:05:12.091-06:00[America/Chicago]    # ISO 8601 format: https://www.w3.org/TR/NOTE-datetime
+creation_date: 2024-11-17T18:40:24.327-06:00[America/Chicago]    # ISO 8601 format: https://www.w3.org/TR/NOTE-datetime
 operating_system: Windows 10
 mcc_mode: IDE            # [IDE|Standalone|Headless]
-mcc_version: v5.5.0
+mcc_version: v5.5.1
 mcc_core_version: v5.5.7
 mplabx_version: v6.20        # if MPLAB X plugin only
 harmony_version: v1.3.2

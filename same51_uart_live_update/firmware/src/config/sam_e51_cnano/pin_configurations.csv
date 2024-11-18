@@ -27,7 +27,7 @@ Pin Number,Pin ID,Custom Name,Function,Mode, Direction,Latch,Pull Up,Pull Down,D
 30,PA13,,Available,,,,,,NORMAL
 31,PA14,LED0,LED_AL,Digital,Out,High,,,NORMAL
 32,PA15,SW0,SWITCH_AL,Digital,In,n/a,Yes,No,NORMAL
-35,PA16,,Available,,,,,,NORMAL
+35,PA16,LED1,LED_AL,Digital,Out,High,,,NORMAL
 36,PA17,,Available,,,,,,NORMAL
 37,PA18,,Available,,,,,,NORMAL
 38,PA19,,Available,,,,,,NORMAL

@@ -80,6 +80,9 @@ APP_DATA appData;
 
 static volatile uint16_t nvmctrlStatus = 0;
 
+const char* messageA = "Application running from NVM Flash BANK A\n";
+const char* messageB = "Application running from NVM Flash BANK B\n";
+
 // *****************************************************************************
 // *****************************************************************************
 // Section: Application Callback Functions
@@ -158,8 +161,7 @@ void APP_Tasks ( void )
             if (changeSamplingRate == false && isLiveUpdateFailure == true)
             {
                 LED0_On();
-				PORT_PinSet(PORT_PIN_PA16);  // Drive PA16 high
-                //LED2_On();
+                LED1_On();
             }
             else if (isRTCExpired == true && changeSamplingRate == true && isLiveUpdateFailure == false)
             {
@@ -168,17 +170,18 @@ void APP_Tasks ( void )
                 if ((nvmctrlStatus & NVMCTRL_AFIRST_MSK) != 0)
                 {
                     RTC_Timer32Compare0Set(PERIOD_500MS); // Application running from NVM Flash BANK A
+                    SERCOM5_USART_Write((uint8_t*)messageA, 43);
                 }
                 else
                 {
                     RTC_Timer32Compare0Set(PERIOD_4S); // Application running from NVM Flash BANK B
+                    SERCOM5_USART_Write((uint8_t*)messageB, 43);
                 }
 
                 changeSamplingRate  = false;
 
                 LED0_Off();
-                //PORT_PinToggle(PORT_PIN_PA16);  // Drive PA16 high
-				//LED2_Toggle();
+                LED1_Toggle();
             }
             else if (isRTCExpired == true && changeSamplingRate == false) // Live Update finished
             {
@@ -187,16 +190,16 @@ void APP_Tasks ( void )
                 if ((nvmctrlStatus & NVMCTRL_AFIRST_MSK) != 0)
                 {
                     RTC_Timer32Compare0Set(PERIOD_500MS); // Application running from NVM Flash BANK A
+                    SERCOM5_USART_Write((uint8_t*)messageA, 43);
                 }
                 else
                 {
                     RTC_Timer32Compare0Set(PERIOD_4S); // Application running from NVM Flash BANK B
+                    SERCOM5_USART_Write((uint8_t*)messageA, 43);
                 }
 
-                //LED2_Off();
-				//PORT_PinClear(PORT_PIN_PA16);  // Drive PA16 high
+                LED1_Off();
                 LED0_Toggle();
-
             }
             break;
         }

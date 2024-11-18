@@ -245,6 +245,22 @@ Discarded input sections
  .text          0x0000000000000000        0x0 build/sam_e51_cnano/production/_ext/1360937237/main.o
  .data          0x0000000000000000        0x0 build/sam_e51_cnano/production/_ext/1360937237/main.o
  .bss           0x0000000000000000        0x0 build/sam_e51_cnano/production/_ext/1360937237/main.o
+ .text          0x0000000000000000        0x0 build/sam_e51_cnano/production/_ext/570918426/libc_syscalls.o
+ .data          0x0000000000000000        0x0 build/sam_e51_cnano/production/_ext/570918426/libc_syscalls.o
+ .bss           0x0000000000000000        0x0 build/sam_e51_cnano/production/_ext/570918426/libc_syscalls.o
+ .text._exit    0x0000000000000000        0x4 build/sam_e51_cnano/production/_ext/570918426/libc_syscalls.o
+ .debug_info    0x0000000000000000       0xaa build/sam_e51_cnano/production/_ext/570918426/libc_syscalls.o
+ .debug_abbrev  0x0000000000000000       0x5d build/sam_e51_cnano/production/_ext/570918426/libc_syscalls.o
+ .debug_loc     0x0000000000000000       0x15 build/sam_e51_cnano/production/_ext/570918426/libc_syscalls.o
+ .debug_aranges
+                0x0000000000000000       0x20 build/sam_e51_cnano/production/_ext/570918426/libc_syscalls.o
+ .debug_ranges  0x0000000000000000       0x10 build/sam_e51_cnano/production/_ext/570918426/libc_syscalls.o
+ .debug_line    0x0000000000000000       0x63 build/sam_e51_cnano/production/_ext/570918426/libc_syscalls.o
+ .debug_str     0x0000000000000000      0x2d2 build/sam_e51_cnano/production/_ext/570918426/libc_syscalls.o
+ .comment       0x0000000000000000       0x2c build/sam_e51_cnano/production/_ext/570918426/libc_syscalls.o
+ .debug_frame   0x0000000000000000       0x20 build/sam_e51_cnano/production/_ext/570918426/libc_syscalls.o
+ .ARM.attributes
+                0x0000000000000000       0x34 build/sam_e51_cnano/production/_ext/570918426/libc_syscalls.o
  .text          0x0000000000000000        0x0 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-size-musl.a(memcpy.o)
  .data          0x0000000000000000        0x0 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-size-musl.a(memcpy.o)
  .bss           0x0000000000000000        0x0 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-size-musl.a(memcpy.o)
@@ -360,6 +376,7 @@ LOAD build/sam_e51_cnano/production/_ext/8444704/plib_systick.o
 LOAD build/sam_e51_cnano/production/_ext/570918426/initialization.o
 LOAD build/sam_e51_cnano/production/_ext/570918426/startup_xc32.o
 LOAD build/sam_e51_cnano/production/_ext/1360937237/main.o
+LOAD build/sam_e51_cnano/production/_ext/570918426/libc_syscalls.o
                 0x0000000000000001                __MPLAB_BUILD = 0x1
 
 .vectors        0x0000000020000010        0x8 load address 0x0000000000000000

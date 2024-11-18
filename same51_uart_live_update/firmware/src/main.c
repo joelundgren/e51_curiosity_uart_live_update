@@ -38,7 +38,7 @@ int main ( void )
 {
     /* Initialize all modules */
     SYS_Initialize ( NULL );
-//PORT_PinOutputEnable(PORT_PIN_PA16);
+
     while ( true )
     {
         /* Maintain state machines of all polled MPLAB Harmony modules. */

@@ -2,6 +2,12 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/C:/Users/surface/Desktop/Saile%20Gauge/gh/e51_curiosity_uart_live_update/same51_uart_live_update/firmware/src/main.c</file>
+            <file>file:/C:/Users/surface/Desktop/Saile%20Gauge/gh/e51_curiosity_uart_live_update/same51_uart_live_update/firmware/src/app.c</file>
+            <file>file:/C:/Users/surface/Desktop/Saile%20Gauge/gh/e51_curiosity_uart_live_update/same51_uart_live_update/firmware/src/app_live_update.c</file>
+            <file>file:/C:/Users/surface/Desktop/Saile%20Gauge/gh/e51_curiosity_uart_live_update/same51_uart_live_update/firmware/src/config/sam_e51_cnano/peripheral/pac/plib_pac.c</file>
+            <file>file:/C:/Users/surface/Desktop/Saile%20Gauge/gh/e51_curiosity_uart_live_update/same51_uart_live_update/firmware/src/config/sam_e51_cnano/peripheral/pac/plib_pac.h</file>
+        </group>
     </open-files>
 </project-private>

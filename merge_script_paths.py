@@ -5,8 +5,8 @@ import os
 base_path = os.path.dirname(os.path.abspath(__file__))
 
 # Define file paths using relative paths and resolve to absolute paths
-bootloader_path = os.path.abspath(os.path.join(base_path, "..", "e51_curiosity_uart_live_update", "e51_uart_fail_safe_bootloader", "firmware", "sam_e51_cnano.X", "dist", "sam_e51_cnano", "production", "sam_e51_cnano.X.production.bin"))
-live_update_firmware_path = os.path.abspath(os.path.join(base_path, "..", "e51_curiosity_uart_live_update", "same51_uart_live_update", "firmware", "sam_e51_cnano.X", "dist", "sam_e51_cnano", "production", "sam_e51_cnano.X.production.bin"))
+bootloader_path = os.path.abspath(os.path.join(base_path, "e51_uart_fail_safe_bootloader", "firmware", "sam_e51_cnano.X", "dist", "sam_e51_cnano", "production", "sam_e51_cnano.X.production.bin"))
+live_update_firmware_path = os.path.abspath(os.path.join(base_path, "same51_uart_live_update", "firmware", "sam_e51_cnano.X", "dist", "sam_e51_cnano", "production", "sam_e51_cnano.X.production.bin"))
 merge_script_path = os.path.abspath(os.path.join(base_path, "btl_app_merge_bin.py"))
 
 # Check if each path exists
