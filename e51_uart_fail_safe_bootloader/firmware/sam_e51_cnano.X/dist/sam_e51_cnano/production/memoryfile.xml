@@ -3,15 +3,15 @@
   <executable name="dist/sam_e51_cnano/production/sam_e51_cnano.X.production.elf">
     <memory name="program">
       <units>bytes</units>
-      <length>8196</length>
-      <used>1700</used>
-      <free>6496</free>
+      <length>8192</length>
+      <used>1776</used>
+      <free>6416</free>
     </memory>
     <memory name="data">
       <units>bytes</units>
       <length>262128</length>
-      <used>18040</used>
-      <free>244088</free>
+      <used>18124</used>
+      <free>244004</free>
     </memory>
   </executable>
 </project>

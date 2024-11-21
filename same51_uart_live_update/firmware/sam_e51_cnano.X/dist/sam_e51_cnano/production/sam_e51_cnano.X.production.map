@@ -28,79 +28,75 @@ section                    address  length [bytes]      (dec)  Description
 -------                 ----------  -------------------------  -----------
 .vectors                    0x2000          0x260         608   
 .text                       0x2260           0x20          32  App's exec code 
-.text.APP_LIVE_UPDATE_S     0x2280          0x168         360   
-.text.APP_LIVE_UPDATE_T     0x23e8          0x14c         332   
-.text.usart_ReadEventHa     0x2534          0x120         288   
-.dinit                      0x2654          0x110         272   
-.text.APP_Tasks             0x2764          0x100         256   
-.text.CLOCK_Initialize      0x2864           0xd8         216   
-.text.SERCOM5_USART_Wri     0x293c           0xd8         216   
-.text.SERCOM5_USART_ISR     0x2a14           0xb8         184   
-.text.SERCOM5_USART_ISR     0x2acc           0xa8         168   
-.text.Reset_Handler         0x2b74           0x88         136   
-.text.SERCOM5_USART_Rea     0x2bfc           0x84         132   
-.text.NVIC_Initialize       0x2c80           0x7c         124   
-.text.SERCOM5_USART_Ini     0x2cfc           0x7c         124   
-.text.__libc_start_init     0x2d78           0x5c          92   
-.text.SERCOM5_USART_Int     0x2dd4           0x58          88   
-.rodata.str1.4              0x2e2c           0x58          88   
-.text.RTC_Initialize        0x2e84           0x54          84   
-.text.DSU_CRCCalculate      0x2ed8           0x4c          76   
-.text.SERCOM5_USART_ISR     0x2f24           0x4c          76   
-.text                       0x2f70           0x40          64  App's exec code 
-.text.NVMCTRL_PageWrite     0x2fb0           0x40          64   
-.text.PAC_InterruptHand     0x2ff0           0x3c          60   
-.text.PORT_Initialize       0x302c           0x3c          60   
-.text.SYS_Initialize        0x3068           0x34          52   
-.text.__pic32c_data_ini     0x309c           0x34          52   
-.text.RTC_InterruptHand     0x30d0           0x2c          44   
-.text.APP_Initialize        0x30fc           0x28          40   
-.text.send_Response         0x3124           0x24          36   
-.text.__dinit_copy          0x3148           0x1e          30   
-.text.EVSYS_Initialize      0x3166            0x2           2   
-.text.NVMCTRL_BlockEras     0x3168           0x1c          28   
-.text.SYSTICK_TimerInit     0x3184           0x1c          28   
-.text.SYSTICK_TimerRest     0x31a0           0x1c          28   
-.text.APP_LIVE_UPDATE_I     0x31bc           0x1c          28   
-.text.RTC_Timer32Start      0x31d8           0x18          24   
-.text.SERCOM5_USART_Wri     0x31f0           0x18          24   
-.text.SERCOM5_USART_Rea     0x3208           0x18          24   
-.text.SERCOM5_USART_Rea     0x3220           0x18          24   
-.text.BSP_Initialize        0x3238           0x14          20   
-.text.NVMCTRL_IsBusy        0x324c           0x14          20   
-.text.RTC_Timer32Compar     0x3260           0x14          20   
-.text.SERCOM5_USART_Wri     0x3274           0x14          20   
-.text.SYSTICK_TimerStar     0x3288           0x14          20   
-.text.rtcEventHandler       0x329c           0x14          20   
-.rodata                     0x32b0           0x14          20  Read-only const 
-.text.__dinit_clear         0x32c4           0x12          18   
-.text.Dummy_Handler         0x32d6            0x2           2   
-.text.NVMCTRL_Initializ     0x32d8           0x10          16   
-.text.NVMCTRL_RegionUnl     0x32e8           0x10          16   
-.text.NVMCTRL_BankSwap      0x32f8           0x10          16   
-.text.SERCOM5_USART_Err     0x3308           0x10          16   
-.text.SYSTICK_TimerPeri     0x3318           0x10          16   
-.text.PAC_PeripheralPro     0x3328            0xe          14   
-.text.main                  0x3336            0xe          14   
-.text.NVMCTRL_StatusGet     0x3344            0xc          12   
-.text.RTC_Timer32Callba     0x3350            0xc          12   
-.text.SERCOM5_USART_Rea     0x335c            0xc          12   
-.text.SERCOM5_USART_Rea     0x3368            0xc          12   
-.text.SYS_Tasks             0x3374            0xc          12   
-.text.PAC_Initialize        0x3380            0xa          10   
-.text.SERCOM5_USART_Wri     0x338a            0x8           8   
-.text.__dummy_decompres     0x3392            0x4           4   
-.text.NonMaskableInt_Ha     0x3396            0x2           2   
-.text.HardFault_Handler     0x3398            0x2           2   
-.text.DebugMonitor_Hand     0x339a            0x2           2   
-.text.MemoryManagement_     0x339c            0x2           2   
-.text.BusFault_Handler      0x339e            0x2           2   
-.text.UsageFault_Handle     0x33a0            0x2           2   
-.text.Dummy_App_Func        0x33a2            0x2           2   
-.text.__dummy               0x33a4            0x2           2   
-      Total ROM used  :      0x13a6        5030  0.5% of 0xfe000
+.text.SERCOM5_USART_Int     0x2280          0x1d4         468   
+.text.APP_LIVE_UPDATE_S     0x2454          0x168         360   
+.text.APP_LIVE_UPDATE_T     0x25bc          0x14c         332   
+.text.usart_ReadEventHa     0x2708          0x120         288   
+.dinit                      0x2828          0x100         256   
+.text.CLOCK_Initialize      0x2928           0xd8         216   
+.text.SERCOM5_USART_Wri     0x2a00           0xd8         216   
+.text.APP_Tasks             0x2ad8           0xd4         212   
+.text.Reset_Handler         0x2bac           0x88         136   
+.text.SERCOM5_USART_Ini     0x2c34           0x7c         124   
+.text.SERCOM5_USART_Rea     0x2cb0           0x7c         124   
+.text.NVIC_Initialize       0x2d2c           0x74         116   
+.text.__libc_start_init     0x2da0           0x5c          92   
+.text.RTC_Initialize        0x2dfc           0x54          84   
+.text.DSU_CRCCalculate      0x2e50           0x4c          76   
+.text                       0x2e9c           0x40          64  App's exec code 
+.text.NVMCTRL_PageWrite     0x2edc           0x40          64   
+.text.PORT_Initialize       0x2f1c           0x3c          60   
+.text.PAC_InterruptHand     0x2f58           0x38          56   
+.text.SYS_Initialize        0x2f90           0x34          52   
+.text.__pic32c_data_ini     0x2fc4           0x34          52   
+.text.RTC_InterruptHand     0x2ff8           0x28          40   
+.text.APP_Initialize        0x3020           0x28          40   
+.text.send_Response         0x3048           0x24          36   
+.text.__dinit_copy          0x306c           0x1e          30   
+.text.EVSYS_Initialize      0x308a            0x2           2   
+.text.NVMCTRL_BlockEras     0x308c           0x1c          28   
+.text.SYSTICK_TimerInit     0x30a8           0x1c          28   
+.text.SYSTICK_TimerRest     0x30c4           0x1c          28   
+.text.APP_LIVE_UPDATE_I     0x30e0           0x1c          28   
+.text.RTC_Timer32Start      0x30fc           0x18          24   
+.text.SERCOM5_USART_Wri     0x3114           0x18          24   
+.text.SERCOM5_USART_Rea     0x312c           0x18          24   
+.text.SERCOM5_USART_Rea     0x3144           0x18          24   
+.text.BSP_Initialize        0x315c           0x14          20   
+.text.NVMCTRL_IsBusy        0x3170           0x14          20   
+.text.RTC_Timer32Compar     0x3184           0x14          20   
+.text.SERCOM5_USART_Wri     0x3198           0x14          20   
+.text.SYSTICK_TimerStar     0x31ac           0x14          20   
+.text.rtcEventHandler       0x31c0           0x14          20   
+.rodata                     0x31d4           0x14          20  Read-only const 
+.text.__dinit_clear         0x31e8           0x12          18   
+.text.Dummy_Handler         0x31fa            0x2           2   
+.text.NVMCTRL_Initializ     0x31fc           0x10          16   
+.text.NVMCTRL_RegionUnl     0x320c           0x10          16   
+.text.NVMCTRL_BankSwap      0x321c           0x10          16   
+.text.SERCOM5_USART_Err     0x322c           0x10          16   
+.text.SYSTICK_TimerPeri     0x323c           0x10          16   
+.text.PAC_PeripheralPro     0x324c            0xe          14   
+.text.main                  0x325a            0xe          14   
+.text.NVMCTRL_StatusGet     0x3268            0xc          12   
+.text.RTC_Timer32Callba     0x3274            0xc          12   
+.text.SERCOM5_USART_Rea     0x3280            0xc          12   
+.text.SERCOM5_USART_Rea     0x328c            0xc          12   
+.text.SYS_Tasks             0x3298            0xc          12   
+.text.PAC_Initialize        0x32a4            0xa          10   
+.text.SERCOM5_USART_Wri     0x32ae            0x8           8   
+.text.__dummy_decompres     0x32b6            0x4           4   
+.text.NonMaskableInt_Ha     0x32ba            0x2           2   
+.text.HardFault_Handler     0x32bc            0x2           2   
+.text.DebugMonitor_Hand     0x32be            0x2           2   
+.text.MemoryManagement_     0x32c0            0x2           2   
+.text.BusFault_Handler      0x32c2            0x2           2   
+.text.UsageFault_Handle     0x32c4            0x2           2   
+.text.Dummy_App_Func        0x32c6            0x2           2   
+.text.__dummy               0x32c8            0x2           2   
+      Total ROM used  :      0x12ca        4810  0.5% of 0xfe000
         --------------------------------------------------------------------------
-         Total Program Memory used  :      0x13a6        5030  0.5% of 0xfe000
+         Total Program Memory used  :      0x12ca        4810  0.5% of 0xfe000
         --------------------------------------------------------------------------
 
 
@@ -118,12 +114,12 @@ section                    address  length [bytes]      (dec)  Description
 .bss.pacCallbackObject  0x200041cc            0x8           8   
 .bss.app_live_update    0x200041d4            0x7           7   
 .bss.isRTCExpired       0x200041db            0x1           1   
-.bss.bytes_read.8975    0x200041dc            0x4           4   
+.bss.bytes_read.8970    0x200041dc            0x4           4   
 .bss.lu_flash_addr      0x200041e0            0x4           4   
 .bss.lu_unlock_begin    0x200041e4            0x4           4   
 .bss.lu_unlock_end      0x200041e8            0x4           4   
-.bss.ptr.8976           0x200041ec            0x4           4   
-.bss.size.8977          0x200041f0            0x4           4   
+.bss.ptr.8971           0x200041ec            0x4           4   
+.bss.size.8972          0x200041f0            0x4           4   
 .bss                    0x200041f4            0x4           4  Uninitialized data 
 .bss                    0x200041f8            0x4           4  Uninitialized data 
 .bss.nvmctrlStatus      0x200041fc            0x2           2   
@@ -132,20 +128,18 @@ section                    address  length [bytes]      (dec)  Description
 .bss.changeSamplingRate 0x20004201            0x1           1   
 .bss.header_received.89 0x20004202            0x1           1   
 .bss.isLiveUpdateFailur 0x20004203            0x1           1   
-.bss.resp.8992          0x20004204            0x1           1   
-.data.messageA          0x20004208            0x4           4   
-.data.messageB          0x2000420c            0x4           4   
-         Total RAM used  :      0x41fd       16893  6.4% of 0x3fff0
+.bss.resp.8987          0x20004204            0x1           1   
+         Total RAM used  :      0x41f5       16885  6.4% of 0x3fff0
         --------------------------------------------------------------------------
-            Total Data Memory used  :      0x41fd       16893  6.4% of 0x3fff0
+            Total Data Memory used  :      0x41f5       16885  6.4% of 0x3fff0
         --------------------------------------------------------------------------
 
 
 Dynamic Data-Memory Reservation
 section                    address  length [bytes]      (dec)  Description
 -------                 ----------  -------------------------  -----------
-heap                    0x20004218          0x200         512  Reserved for heap 
-stack                   0x20004430        0x3bbc8      244680  Reserved for stack 
+heap                    0x20004208          0x200         512  Reserved for heap 
+stack                   0x20004420        0x3bbd0      244688  Reserved for stack 
 
         --------------------------------------------------------------------------
 
@@ -154,19 +148,19 @@ Microchip PIC32 Memory-Usage Report By Module
         text        data         bss         dec         hex    basename                   filename
 --------------------------------------------------------------------------------
         1044           0       16423       17467        443b    app_live_update.o      build/sam_e51_cnano/production/_ext/1360937237/app_live_update.o
-        1128           0         320        1448         5a8    plib_sercom5_usart.o   build/sam_e51_cnano/production/_ext/314480351/plib_sercom5_usart.o
+        1072           0         320        1392         570    plib_sercom5_usart.o   build/sam_e51_cnano/production/_ext/314480351/plib_sercom5_usart.o
          610           0           0         610         262    interrupts.o           build/sam_e51_cnano/production/_ext/570918426/interrupts.o
-         404           8           4         416         1a0    app.o                  build/sam_e51_cnano/production/_ext/1360937237/app.o
-         272           0           0         272         110    data_init              data_init
+         272           0           4         276         114    app.o                  build/sam_e51_cnano/production/_ext/1360937237/app.o
+         256           0           0         256         100    data_init              data_init
          216           0           0         216          d8    plib_clock.o           build/sam_e51_cnano/production/_ext/7187140/plib_clock.o
-         184           0          12         196          c4    plib_rtc_timer.o       build/sam_e51_cnano/production/_ext/1220132503/plib_rtc_timer.o
+         180           0          12         192          c0    plib_rtc_timer.o       build/sam_e51_cnano/production/_ext/1220132503/plib_rtc_timer.o
          172           0           2         174          ae    plib_nvmctrl.o         build/sam_e51_cnano/production/_ext/226030394/plib_nvmctrl.o
          138           0           0         138          8a    startup_xc32.o         build/sam_e51_cnano/production/_ext/570918426/startup_xc32.o
-         124           0           0         124          7c    plib_nvic.o            build/sam_e51_cnano/production/_ext/830715028/plib_nvic.o
+         116           0           0         116          74    plib_nvic.o            build/sam_e51_cnano/production/_ext/830715028/plib_nvic.o
           72           0          28         100          64    crtbegin.o             c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v7e-m+fp/hard/crtbegin.o
           94           0           0          94          5e    __libc_start_main.o    libc-musl.a
           92           0           0          92          5c    plib_systick.o         build/sam_e51_cnano/production/_ext/8444704/plib_systick.o
-          84           0           8          92          5c    plib_pac.o             build/sam_e51_cnano/production/_ext/1220129992/plib_pac.o
+          80           0           8          88          58    plib_pac.o             build/sam_e51_cnano/production/_ext/1220129992/plib_pac.o
            0           0          80          80          50    libc.o                 libc-musl.a
           76           0           4          80          50    data_init.o            libpic32c.a
           76           0           0          76          4c    plib_dsu.o             build/sam_e51_cnano/production/_ext/1220119036/plib_dsu.o
@@ -183,7 +177,7 @@ Microchip PIC32 Memory-Usage Report By Module
            0           0           4           4           4    __environ.o            libc-musl.a
            2           0           0           2           2    plib_evsys.o           build/sam_e51_cnano/production/_ext/9336626/plib_evsys.o
 --------------------------------------------------------------------------------
-        5030           8       16885       21923        55a3    dist/sam_e51_cnano/production/sam_e51_cnano.X.production.elf
+        4810           0       16885       21695        54bf    dist/sam_e51_cnano/production/sam_e51_cnano.X.production.elf
 
 
 Discarded input sections
@@ -352,10 +346,6 @@ Discarded input sections
                 0x0000000000000000        0x8 build/sam_e51_cnano/production/_ext/314480351/plib_sercom5_usart.o
  .text.SERCOM5_USART_SerialSetup
                 0x0000000000000000      0x140 build/sam_e51_cnano/production/_ext/314480351/plib_sercom5_usart.o
- .text.SERCOM5_USART_Enable
-                0x0000000000000000       0x20 build/sam_e51_cnano/production/_ext/314480351/plib_sercom5_usart.o
- .text.SERCOM5_USART_Disable
-                0x0000000000000000       0x20 build/sam_e51_cnano/production/_ext/314480351/plib_sercom5_usart.o
  .text.SERCOM5_USART_ReadFreeBufferCountGet
                 0x0000000000000000       0x14 build/sam_e51_cnano/production/_ext/314480351/plib_sercom5_usart.o
  .text.SERCOM5_USART_ReadBufferSizeGet
@@ -438,6 +428,12 @@ Discarded input sections
  .text          0x0000000000000000        0x0 build/sam_e51_cnano/production/_ext/1360937237/app.o
  .data          0x0000000000000000        0x0 build/sam_e51_cnano/production/_ext/1360937237/app.o
  .bss           0x0000000000000000        0x0 build/sam_e51_cnano/production/_ext/1360937237/app.o
+ .data.messageA
+                0x0000000000000000        0x4 build/sam_e51_cnano/production/_ext/1360937237/app.o
+ .data.messageB
+                0x0000000000000000        0x4 build/sam_e51_cnano/production/_ext/1360937237/app.o
+ .rodata.str1.4
+                0x0000000000000000       0x58 build/sam_e51_cnano/production/_ext/1360937237/app.o
  .text          0x0000000000000000        0x0 build/sam_e51_cnano/production/_ext/1360937237/app_live_update.o
  .data          0x0000000000000000        0x0 build/sam_e51_cnano/production/_ext/1360937237/app_live_update.o
  .bss           0x0000000000000000        0x0 build/sam_e51_cnano/production/_ext/1360937237/app_live_update.o
@@ -574,10 +570,10 @@ Name             Origin             Length             Attributes
 rom              0x0000000000002000 0x00000000000fe000 xrl
 ram              0x0000000020000010 0x000000000003fff0 xw !r
 tcm              0x0000000003000000 0x0000000000000000 xw
-bkupram          0x0000000047000000 0x0000000000002000
 config_00804000  0x0000000000804000 0x0000000000000004
 config_00804004  0x0000000000804004 0x0000000000000004
 config_00804008  0x0000000000804008 0x0000000000000004
+bkupram          0x0000000000000000 0xffffffffffffffff
 *default*        0x0000000000000000 0xffffffffffffffff
 
 Linker script and memory map
@@ -806,61 +802,61 @@ LOAD stack
  .comment       0x000000000000002b       0x2c c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_clear.o)
  .comment       0x000000000000002b       0x2c c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_copy.o)
 
-.debug_info     0x0000000000000000     0x82f7
+.debug_info     0x0000000000000000     0x8168
  .debug_info    0x0000000000000000      0x246 build/sam_e51_cnano/production/_ext/673975658/bsp.o
  .debug_info    0x0000000000000246      0x639 build/sam_e51_cnano/production/_ext/7187140/plib_clock.o
  .debug_info    0x000000000000087f      0x3d4 build/sam_e51_cnano/production/_ext/1220119036/plib_dsu.o
  .debug_info    0x0000000000000c53       0x9b build/sam_e51_cnano/production/_ext/9336626/plib_evsys.o
  .debug_info    0x0000000000000cee      0xbde build/sam_e51_cnano/production/_ext/830715028/plib_nvic.o
  .debug_info    0x00000000000018cc      0x8e5 build/sam_e51_cnano/production/_ext/226030394/plib_nvmctrl.o
- .debug_info    0x00000000000021b1      0x552 build/sam_e51_cnano/production/_ext/1220129992/plib_pac.o
- .debug_info    0x0000000000002703      0x6d4 build/sam_e51_cnano/production/_ext/830661877/plib_port.o
- .debug_info    0x0000000000002dd7      0xad8 build/sam_e51_cnano/production/_ext/1220132503/plib_rtc_timer.o
- .debug_info    0x00000000000038af     0x1812 build/sam_e51_cnano/production/_ext/314480351/plib_sercom5_usart.o
- .debug_info    0x00000000000050c1      0x33a build/sam_e51_cnano/production/_ext/8444704/plib_systick.o
- .debug_info    0x00000000000053fb      0x1d4 build/sam_e51_cnano/production/_ext/570918426/initialization.o
- .debug_info    0x00000000000055cf      0xa73 build/sam_e51_cnano/production/_ext/570918426/interrupts.o
- .debug_info    0x0000000000006042      0x116 build/sam_e51_cnano/production/_ext/570918426/exceptions.o
- .debug_info    0x0000000000006158      0x55b build/sam_e51_cnano/production/_ext/570918426/startup_xc32.o
- .debug_info    0x00000000000066b3       0xd6 build/sam_e51_cnano/production/_ext/570918426/tasks.o
- .debug_info    0x0000000000006789      0x4a0 build/sam_e51_cnano/production/_ext/1360937237/app.o
- .debug_info    0x0000000000006c29      0xf0f build/sam_e51_cnano/production/_ext/1360937237/app_live_update.o
- .debug_info    0x0000000000007b38       0xe4 build/sam_e51_cnano/production/_ext/1360937237/main.o
- .debug_info    0x0000000000007c1c       0x54 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(data_init.o)
- .debug_info    0x0000000000007c70      0x2fb c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-musl.a(__libc_start_main.o)
- .debug_info    0x0000000000007f6b      0x276 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-musl.a(libc.o)
- .debug_info    0x00000000000081e1       0x97 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-musl.a(__environ.o)
- .debug_info    0x0000000000008278       0x3f c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_clear.o)
- .debug_info    0x00000000000082b7       0x40 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_copy.o)
+ .debug_info    0x00000000000021b1      0x52a build/sam_e51_cnano/production/_ext/1220129992/plib_pac.o
+ .debug_info    0x00000000000026db      0x6d4 build/sam_e51_cnano/production/_ext/830661877/plib_port.o
+ .debug_info    0x0000000000002daf      0xa9c build/sam_e51_cnano/production/_ext/1220132503/plib_rtc_timer.o
+ .debug_info    0x000000000000384b     0x174e build/sam_e51_cnano/production/_ext/314480351/plib_sercom5_usart.o
+ .debug_info    0x0000000000004f99      0x33a build/sam_e51_cnano/production/_ext/8444704/plib_systick.o
+ .debug_info    0x00000000000052d3      0x1d4 build/sam_e51_cnano/production/_ext/570918426/initialization.o
+ .debug_info    0x00000000000054a7      0xa73 build/sam_e51_cnano/production/_ext/570918426/interrupts.o
+ .debug_info    0x0000000000005f1a      0x116 build/sam_e51_cnano/production/_ext/570918426/exceptions.o
+ .debug_info    0x0000000000006030      0x55b build/sam_e51_cnano/production/_ext/570918426/startup_xc32.o
+ .debug_info    0x000000000000658b       0xd6 build/sam_e51_cnano/production/_ext/570918426/tasks.o
+ .debug_info    0x0000000000006661      0x439 build/sam_e51_cnano/production/_ext/1360937237/app.o
+ .debug_info    0x0000000000006a9a      0xf0f build/sam_e51_cnano/production/_ext/1360937237/app_live_update.o
+ .debug_info    0x00000000000079a9       0xe4 build/sam_e51_cnano/production/_ext/1360937237/main.o
+ .debug_info    0x0000000000007a8d       0x54 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(data_init.o)
+ .debug_info    0x0000000000007ae1      0x2fb c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-musl.a(__libc_start_main.o)
+ .debug_info    0x0000000000007ddc      0x276 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-musl.a(libc.o)
+ .debug_info    0x0000000000008052       0x97 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-musl.a(__environ.o)
+ .debug_info    0x00000000000080e9       0x3f c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_clear.o)
+ .debug_info    0x0000000000008128       0x40 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_copy.o)
 
-.debug_abbrev   0x0000000000000000     0x1e68
+.debug_abbrev   0x0000000000000000     0x1e3c
  .debug_abbrev  0x0000000000000000       0xb3 build/sam_e51_cnano/production/_ext/673975658/bsp.o
  .debug_abbrev  0x00000000000000b3      0x10b build/sam_e51_cnano/production/_ext/7187140/plib_clock.o
  .debug_abbrev  0x00000000000001be       0xf3 build/sam_e51_cnano/production/_ext/1220119036/plib_dsu.o
  .debug_abbrev  0x00000000000002b1       0x46 build/sam_e51_cnano/production/_ext/9336626/plib_evsys.o
  .debug_abbrev  0x00000000000002f7      0x1fe build/sam_e51_cnano/production/_ext/830715028/plib_nvic.o
  .debug_abbrev  0x00000000000004f5      0x23c build/sam_e51_cnano/production/_ext/226030394/plib_nvmctrl.o
- .debug_abbrev  0x0000000000000731      0x19c build/sam_e51_cnano/production/_ext/1220129992/plib_pac.o
- .debug_abbrev  0x00000000000008cd      0x1cd build/sam_e51_cnano/production/_ext/830661877/plib_port.o
- .debug_abbrev  0x0000000000000a9a      0x1f0 build/sam_e51_cnano/production/_ext/1220132503/plib_rtc_timer.o
- .debug_abbrev  0x0000000000000c8a      0x41f build/sam_e51_cnano/production/_ext/314480351/plib_sercom5_usart.o
- .debug_abbrev  0x00000000000010a9      0x110 build/sam_e51_cnano/production/_ext/8444704/plib_systick.o
- .debug_abbrev  0x00000000000011b9       0x96 build/sam_e51_cnano/production/_ext/570918426/initialization.o
- .debug_abbrev  0x000000000000124f       0xc0 build/sam_e51_cnano/production/_ext/570918426/interrupts.o
- .debug_abbrev  0x000000000000130f       0x49 build/sam_e51_cnano/production/_ext/570918426/exceptions.o
- .debug_abbrev  0x0000000000001358      0x1e3 build/sam_e51_cnano/production/_ext/570918426/startup_xc32.o
- .debug_abbrev  0x000000000000153b       0x67 build/sam_e51_cnano/production/_ext/570918426/tasks.o
- .debug_abbrev  0x00000000000015a2      0x19f build/sam_e51_cnano/production/_ext/1360937237/app.o
- .debug_abbrev  0x0000000000001741      0x39c build/sam_e51_cnano/production/_ext/1360937237/app_live_update.o
- .debug_abbrev  0x0000000000001add       0x82 build/sam_e51_cnano/production/_ext/1360937237/main.o
- .debug_abbrev  0x0000000000001b5f       0x44 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(data_init.o)
- .debug_abbrev  0x0000000000001ba3      0x133 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-musl.a(__libc_start_main.o)
- .debug_abbrev  0x0000000000001cd6       0xd4 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-musl.a(libc.o)
- .debug_abbrev  0x0000000000001daa       0x62 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-musl.a(__environ.o)
- .debug_abbrev  0x0000000000001e0c       0x2e c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_clear.o)
- .debug_abbrev  0x0000000000001e3a       0x2e c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_copy.o)
+ .debug_abbrev  0x0000000000000731      0x191 build/sam_e51_cnano/production/_ext/1220129992/plib_pac.o
+ .debug_abbrev  0x00000000000008c2      0x1cd build/sam_e51_cnano/production/_ext/830661877/plib_port.o
+ .debug_abbrev  0x0000000000000a8f      0x1d1 build/sam_e51_cnano/production/_ext/1220132503/plib_rtc_timer.o
+ .debug_abbrev  0x0000000000000c60      0x428 build/sam_e51_cnano/production/_ext/314480351/plib_sercom5_usart.o
+ .debug_abbrev  0x0000000000001088      0x110 build/sam_e51_cnano/production/_ext/8444704/plib_systick.o
+ .debug_abbrev  0x0000000000001198       0x96 build/sam_e51_cnano/production/_ext/570918426/initialization.o
+ .debug_abbrev  0x000000000000122e       0xc0 build/sam_e51_cnano/production/_ext/570918426/interrupts.o
+ .debug_abbrev  0x00000000000012ee       0x49 build/sam_e51_cnano/production/_ext/570918426/exceptions.o
+ .debug_abbrev  0x0000000000001337      0x1e3 build/sam_e51_cnano/production/_ext/570918426/startup_xc32.o
+ .debug_abbrev  0x000000000000151a       0x67 build/sam_e51_cnano/production/_ext/570918426/tasks.o
+ .debug_abbrev  0x0000000000001581      0x194 build/sam_e51_cnano/production/_ext/1360937237/app.o
+ .debug_abbrev  0x0000000000001715      0x39c build/sam_e51_cnano/production/_ext/1360937237/app_live_update.o
+ .debug_abbrev  0x0000000000001ab1       0x82 build/sam_e51_cnano/production/_ext/1360937237/main.o
+ .debug_abbrev  0x0000000000001b33       0x44 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(data_init.o)
+ .debug_abbrev  0x0000000000001b77      0x133 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-musl.a(__libc_start_main.o)
+ .debug_abbrev  0x0000000000001caa       0xd4 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-musl.a(libc.o)
+ .debug_abbrev  0x0000000000001d7e       0x62 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-musl.a(__environ.o)
+ .debug_abbrev  0x0000000000001de0       0x2e c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_clear.o)
+ .debug_abbrev  0x0000000000001e0e       0x2e c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_copy.o)
 
-.debug_aranges  0x0000000000000000      0x668
+.debug_aranges  0x0000000000000000      0x640
  .debug_aranges
                 0x0000000000000000       0x20 build/sam_e51_cnano/production/_ext/673975658/bsp.o
  .debug_aranges
@@ -880,39 +876,39 @@ LOAD stack
  .debug_aranges
                 0x0000000000000240       0xb0 build/sam_e51_cnano/production/_ext/1220132503/plib_rtc_timer.o
  .debug_aranges
-                0x00000000000002f0       0xe8 build/sam_e51_cnano/production/_ext/314480351/plib_sercom5_usart.o
+                0x00000000000002f0       0xc0 build/sam_e51_cnano/production/_ext/314480351/plib_sercom5_usart.o
  .debug_aranges
-                0x00000000000003d8       0x70 build/sam_e51_cnano/production/_ext/8444704/plib_systick.o
+                0x00000000000003b0       0x70 build/sam_e51_cnano/production/_ext/8444704/plib_systick.o
  .debug_aranges
-                0x0000000000000448       0x20 build/sam_e51_cnano/production/_ext/570918426/initialization.o
+                0x0000000000000420       0x20 build/sam_e51_cnano/production/_ext/570918426/initialization.o
  .debug_aranges
-                0x0000000000000468       0x20 build/sam_e51_cnano/production/_ext/570918426/interrupts.o
+                0x0000000000000440       0x20 build/sam_e51_cnano/production/_ext/570918426/interrupts.o
  .debug_aranges
-                0x0000000000000488       0x48 build/sam_e51_cnano/production/_ext/570918426/exceptions.o
+                0x0000000000000460       0x48 build/sam_e51_cnano/production/_ext/570918426/exceptions.o
  .debug_aranges
-                0x00000000000004d0       0x28 build/sam_e51_cnano/production/_ext/570918426/startup_xc32.o
+                0x00000000000004a8       0x28 build/sam_e51_cnano/production/_ext/570918426/startup_xc32.o
  .debug_aranges
-                0x00000000000004f8       0x20 build/sam_e51_cnano/production/_ext/570918426/tasks.o
+                0x00000000000004d0       0x20 build/sam_e51_cnano/production/_ext/570918426/tasks.o
  .debug_aranges
-                0x0000000000000518       0x30 build/sam_e51_cnano/production/_ext/1360937237/app.o
+                0x00000000000004f0       0x30 build/sam_e51_cnano/production/_ext/1360937237/app.o
  .debug_aranges
-                0x0000000000000548       0x40 build/sam_e51_cnano/production/_ext/1360937237/app_live_update.o
+                0x0000000000000520       0x40 build/sam_e51_cnano/production/_ext/1360937237/app_live_update.o
  .debug_aranges
-                0x0000000000000588       0x20 build/sam_e51_cnano/production/_ext/1360937237/main.o
+                0x0000000000000560       0x20 build/sam_e51_cnano/production/_ext/1360937237/main.o
  .debug_aranges
-                0x00000000000005a8       0x28 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(data_init.o)
+                0x0000000000000580       0x28 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(data_init.o)
  .debug_aranges
-                0x00000000000005d0       0x28 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-musl.a(__libc_start_main.o)
+                0x00000000000005a8       0x28 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-musl.a(__libc_start_main.o)
  .debug_aranges
-                0x00000000000005f8       0x18 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-musl.a(libc.o)
+                0x00000000000005d0       0x18 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-musl.a(libc.o)
  .debug_aranges
-                0x0000000000000610       0x18 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-musl.a(__environ.o)
+                0x00000000000005e8       0x18 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-musl.a(__environ.o)
  .debug_aranges
-                0x0000000000000628       0x20 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_clear.o)
+                0x0000000000000600       0x20 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_clear.o)
  .debug_aranges
-                0x0000000000000648       0x20 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_copy.o)
+                0x0000000000000620       0x20 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_copy.o)
 
-.debug_ranges   0x0000000000000000      0x620
+.debug_ranges   0x0000000000000000      0x638
  .debug_ranges  0x0000000000000000       0x10 build/sam_e51_cnano/production/_ext/673975658/bsp.o
  .debug_ranges  0x0000000000000010       0x10 build/sam_e51_cnano/production/_ext/7187140/plib_clock.o
  .debug_ranges  0x0000000000000020       0x10 build/sam_e51_cnano/production/_ext/1220119036/plib_dsu.o
@@ -922,49 +918,49 @@ LOAD stack
  .debug_ranges  0x0000000000000130       0x30 build/sam_e51_cnano/production/_ext/1220129992/plib_pac.o
  .debug_ranges  0x0000000000000160       0x60 build/sam_e51_cnano/production/_ext/830661877/plib_port.o
  .debug_ranges  0x00000000000001c0       0xa0 build/sam_e51_cnano/production/_ext/1220132503/plib_rtc_timer.o
- .debug_ranges  0x0000000000000260      0x1d0 build/sam_e51_cnano/production/_ext/314480351/plib_sercom5_usart.o
- .debug_ranges  0x0000000000000430       0x60 build/sam_e51_cnano/production/_ext/8444704/plib_systick.o
- .debug_ranges  0x0000000000000490       0x10 build/sam_e51_cnano/production/_ext/570918426/initialization.o
- .debug_ranges  0x00000000000004a0       0x10 build/sam_e51_cnano/production/_ext/570918426/interrupts.o
- .debug_ranges  0x00000000000004b0       0x38 build/sam_e51_cnano/production/_ext/570918426/exceptions.o
- .debug_ranges  0x00000000000004e8       0x18 build/sam_e51_cnano/production/_ext/570918426/startup_xc32.o
- .debug_ranges  0x0000000000000500       0x10 build/sam_e51_cnano/production/_ext/570918426/tasks.o
- .debug_ranges  0x0000000000000510       0x20 build/sam_e51_cnano/production/_ext/1360937237/app.o
- .debug_ranges  0x0000000000000530       0x68 build/sam_e51_cnano/production/_ext/1360937237/app_live_update.o
- .debug_ranges  0x0000000000000598       0x10 build/sam_e51_cnano/production/_ext/1360937237/main.o
- .debug_ranges  0x00000000000005a8       0x18 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(data_init.o)
- .debug_ranges  0x00000000000005c0       0x40 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-musl.a(__libc_start_main.o)
- .debug_ranges  0x0000000000000600       0x10 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_clear.o)
- .debug_ranges  0x0000000000000610       0x10 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_copy.o)
+ .debug_ranges  0x0000000000000260      0x1e8 build/sam_e51_cnano/production/_ext/314480351/plib_sercom5_usart.o
+ .debug_ranges  0x0000000000000448       0x60 build/sam_e51_cnano/production/_ext/8444704/plib_systick.o
+ .debug_ranges  0x00000000000004a8       0x10 build/sam_e51_cnano/production/_ext/570918426/initialization.o
+ .debug_ranges  0x00000000000004b8       0x10 build/sam_e51_cnano/production/_ext/570918426/interrupts.o
+ .debug_ranges  0x00000000000004c8       0x38 build/sam_e51_cnano/production/_ext/570918426/exceptions.o
+ .debug_ranges  0x0000000000000500       0x18 build/sam_e51_cnano/production/_ext/570918426/startup_xc32.o
+ .debug_ranges  0x0000000000000518       0x10 build/sam_e51_cnano/production/_ext/570918426/tasks.o
+ .debug_ranges  0x0000000000000528       0x20 build/sam_e51_cnano/production/_ext/1360937237/app.o
+ .debug_ranges  0x0000000000000548       0x68 build/sam_e51_cnano/production/_ext/1360937237/app_live_update.o
+ .debug_ranges  0x00000000000005b0       0x10 build/sam_e51_cnano/production/_ext/1360937237/main.o
+ .debug_ranges  0x00000000000005c0       0x18 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(data_init.o)
+ .debug_ranges  0x00000000000005d8       0x40 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-musl.a(__libc_start_main.o)
+ .debug_ranges  0x0000000000000618       0x10 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_clear.o)
+ .debug_ranges  0x0000000000000628       0x10 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_copy.o)
 
-.debug_line     0x0000000000000000     0x3f12
+.debug_line     0x0000000000000000     0x3d23
  .debug_line    0x0000000000000000       0xdf build/sam_e51_cnano/production/_ext/673975658/bsp.o
  .debug_line    0x00000000000000df      0x25d build/sam_e51_cnano/production/_ext/7187140/plib_clock.o
  .debug_line    0x000000000000033c      0x16c build/sam_e51_cnano/production/_ext/1220119036/plib_dsu.o
  .debug_line    0x00000000000004a8       0x6c build/sam_e51_cnano/production/_ext/9336626/plib_evsys.o
- .debug_line    0x0000000000000514      0x40a build/sam_e51_cnano/production/_ext/830715028/plib_nvic.o
- .debug_line    0x000000000000091e      0x5bf build/sam_e51_cnano/production/_ext/226030394/plib_nvmctrl.o
- .debug_line    0x0000000000000edd      0x1ce build/sam_e51_cnano/production/_ext/1220129992/plib_pac.o
- .debug_line    0x00000000000010ab      0x2bf build/sam_e51_cnano/production/_ext/830661877/plib_port.o
- .debug_line    0x000000000000136a      0x43a build/sam_e51_cnano/production/_ext/1220132503/plib_rtc_timer.o
- .debug_line    0x00000000000017a4      0xcf8 build/sam_e51_cnano/production/_ext/314480351/plib_sercom5_usart.o
- .debug_line    0x000000000000249c      0x311 build/sam_e51_cnano/production/_ext/8444704/plib_systick.o
- .debug_line    0x00000000000027ad      0x2fc build/sam_e51_cnano/production/_ext/570918426/initialization.o
- .debug_line    0x0000000000002aa9       0xc0 build/sam_e51_cnano/production/_ext/570918426/interrupts.o
- .debug_line    0x0000000000002b69       0xcc build/sam_e51_cnano/production/_ext/570918426/exceptions.o
- .debug_line    0x0000000000002c35      0x24c build/sam_e51_cnano/production/_ext/570918426/startup_xc32.o
- .debug_line    0x0000000000002e81       0x85 build/sam_e51_cnano/production/_ext/570918426/tasks.o
- .debug_line    0x0000000000002f06      0x2a9 build/sam_e51_cnano/production/_ext/1360937237/app.o
- .debug_line    0x00000000000031af      0x7fb build/sam_e51_cnano/production/_ext/1360937237/app_live_update.o
- .debug_line    0x00000000000039aa       0x73 build/sam_e51_cnano/production/_ext/1360937237/main.o
- .debug_line    0x0000000000003a1d       0x92 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(data_init.o)
- .debug_line    0x0000000000003aaf      0x1c7 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-musl.a(__libc_start_main.o)
- .debug_line    0x0000000000003c76       0xb5 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-musl.a(libc.o)
- .debug_line    0x0000000000003d2b       0xfb c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-musl.a(__environ.o)
- .debug_line    0x0000000000003e26       0x72 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_clear.o)
- .debug_line    0x0000000000003e98       0x7a c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_copy.o)
+ .debug_line    0x0000000000000514      0x402 build/sam_e51_cnano/production/_ext/830715028/plib_nvic.o
+ .debug_line    0x0000000000000916      0x5bf build/sam_e51_cnano/production/_ext/226030394/plib_nvmctrl.o
+ .debug_line    0x0000000000000ed5      0x1bd build/sam_e51_cnano/production/_ext/1220129992/plib_pac.o
+ .debug_line    0x0000000000001092      0x2bf build/sam_e51_cnano/production/_ext/830661877/plib_port.o
+ .debug_line    0x0000000000001351      0x423 build/sam_e51_cnano/production/_ext/1220132503/plib_rtc_timer.o
+ .debug_line    0x0000000000001774      0xb8e build/sam_e51_cnano/production/_ext/314480351/plib_sercom5_usart.o
+ .debug_line    0x0000000000002302      0x311 build/sam_e51_cnano/production/_ext/8444704/plib_systick.o
+ .debug_line    0x0000000000002613      0x2fa build/sam_e51_cnano/production/_ext/570918426/initialization.o
+ .debug_line    0x000000000000290d       0xc0 build/sam_e51_cnano/production/_ext/570918426/interrupts.o
+ .debug_line    0x00000000000029cd       0xcc build/sam_e51_cnano/production/_ext/570918426/exceptions.o
+ .debug_line    0x0000000000002a99      0x24c build/sam_e51_cnano/production/_ext/570918426/startup_xc32.o
+ .debug_line    0x0000000000002ce5       0x85 build/sam_e51_cnano/production/_ext/570918426/tasks.o
+ .debug_line    0x0000000000002d6a      0x256 build/sam_e51_cnano/production/_ext/1360937237/app.o
+ .debug_line    0x0000000000002fc0      0x7fb build/sam_e51_cnano/production/_ext/1360937237/app_live_update.o
+ .debug_line    0x00000000000037bb       0x73 build/sam_e51_cnano/production/_ext/1360937237/main.o
+ .debug_line    0x000000000000382e       0x92 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(data_init.o)
+ .debug_line    0x00000000000038c0      0x1c7 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-musl.a(__libc_start_main.o)
+ .debug_line    0x0000000000003a87       0xb5 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-musl.a(libc.o)
+ .debug_line    0x0000000000003b3c       0xfb c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-musl.a(__environ.o)
+ .debug_line    0x0000000000003c37       0x72 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_clear.o)
+ .debug_line    0x0000000000003ca9       0x7a c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_copy.o)
 
-.debug_str      0x0000000000000000     0x965e
+.debug_str      0x0000000000000000     0x961f
  .debug_str     0x0000000000000000      0x3bd build/sam_e51_cnano/production/_ext/673975658/bsp.o
  .debug_str     0x00000000000003bd      0x69e build/sam_e51_cnano/production/_ext/7187140/plib_clock.o
  .debug_str     0x0000000000000a5b      0x469 build/sam_e51_cnano/production/_ext/1220119036/plib_dsu.o
@@ -974,24 +970,24 @@ LOAD stack
  .debug_str     0x000000000000252c      0x971 build/sam_e51_cnano/production/_ext/1220129992/plib_pac.o
  .debug_str     0x0000000000002e9d      0x90c build/sam_e51_cnano/production/_ext/830661877/plib_port.o
  .debug_str     0x00000000000037a9      0x79d build/sam_e51_cnano/production/_ext/1220132503/plib_rtc_timer.o
- .debug_str     0x0000000000003f46      0xdea build/sam_e51_cnano/production/_ext/314480351/plib_sercom5_usart.o
- .debug_str     0x0000000000004d30      0x457 build/sam_e51_cnano/production/_ext/8444704/plib_systick.o
- .debug_str     0x0000000000005187      0x3d3 build/sam_e51_cnano/production/_ext/570918426/initialization.o
- .debug_str     0x000000000000555a      0xf00 build/sam_e51_cnano/production/_ext/570918426/interrupts.o
- .debug_str     0x000000000000645a      0x359 build/sam_e51_cnano/production/_ext/570918426/exceptions.o
- .debug_str     0x00000000000067b3      0x493 build/sam_e51_cnano/production/_ext/570918426/startup_xc32.o
- .debug_str     0x0000000000006c46      0x303 build/sam_e51_cnano/production/_ext/570918426/tasks.o
- .debug_str     0x0000000000006f49      0x510 build/sam_e51_cnano/production/_ext/1360937237/app.o
- .debug_str     0x0000000000007459     0x1021 build/sam_e51_cnano/production/_ext/1360937237/app_live_update.o
- .debug_str     0x000000000000847a      0x2e1 build/sam_e51_cnano/production/_ext/1360937237/main.o
- .debug_str     0x000000000000875b      0x1f5 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(data_init.o)
- .debug_str     0x0000000000008950      0x3d4 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-musl.a(__libc_start_main.o)
- .debug_str     0x0000000000008d24      0x33f c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-musl.a(libc.o)
- .debug_str     0x0000000000009063      0x23f c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-musl.a(__environ.o)
- .debug_str     0x00000000000092a2      0x1df c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_clear.o)
- .debug_str     0x0000000000009481      0x1dd c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_copy.o)
+ .debug_str     0x0000000000003f46      0xdbf build/sam_e51_cnano/production/_ext/314480351/plib_sercom5_usart.o
+ .debug_str     0x0000000000004d05      0x457 build/sam_e51_cnano/production/_ext/8444704/plib_systick.o
+ .debug_str     0x000000000000515c      0x3d3 build/sam_e51_cnano/production/_ext/570918426/initialization.o
+ .debug_str     0x000000000000552f      0xf00 build/sam_e51_cnano/production/_ext/570918426/interrupts.o
+ .debug_str     0x000000000000642f      0x359 build/sam_e51_cnano/production/_ext/570918426/exceptions.o
+ .debug_str     0x0000000000006788      0x493 build/sam_e51_cnano/production/_ext/570918426/startup_xc32.o
+ .debug_str     0x0000000000006c1b      0x303 build/sam_e51_cnano/production/_ext/570918426/tasks.o
+ .debug_str     0x0000000000006f1e      0x4fc build/sam_e51_cnano/production/_ext/1360937237/app.o
+ .debug_str     0x000000000000741a     0x1021 build/sam_e51_cnano/production/_ext/1360937237/app_live_update.o
+ .debug_str     0x000000000000843b      0x2e1 build/sam_e51_cnano/production/_ext/1360937237/main.o
+ .debug_str     0x000000000000871c      0x1f5 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(data_init.o)
+ .debug_str     0x0000000000008911      0x3d4 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-musl.a(__libc_start_main.o)
+ .debug_str     0x0000000000008ce5      0x33f c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-musl.a(libc.o)
+ .debug_str     0x0000000000009024      0x23f c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-musl.a(__environ.o)
+ .debug_str     0x0000000000009263      0x1df c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_clear.o)
+ .debug_str     0x0000000000009442      0x1dd c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_copy.o)
 
-.debug_frame    0x0000000000000000      0xb48
+.debug_frame    0x0000000000000000      0xae4
  .debug_frame   0x0000000000000000       0x20 build/sam_e51_cnano/production/_ext/673975658/bsp.o
  .debug_frame   0x0000000000000020       0x20 build/sam_e51_cnano/production/_ext/7187140/plib_clock.o
  .debug_frame   0x0000000000000040       0x34 build/sam_e51_cnano/production/_ext/1220119036/plib_dsu.o
@@ -1001,39 +997,39 @@ LOAD stack
  .debug_frame   0x00000000000002bc       0x68 build/sam_e51_cnano/production/_ext/1220129992/plib_pac.o
  .debug_frame   0x0000000000000324       0xcc build/sam_e51_cnano/production/_ext/830661877/plib_port.o
  .debug_frame   0x00000000000003f0      0x148 build/sam_e51_cnano/production/_ext/1220132503/plib_rtc_timer.o
- .debug_frame   0x0000000000000538      0x240 build/sam_e51_cnano/production/_ext/314480351/plib_sercom5_usart.o
- .debug_frame   0x0000000000000778       0xe0 build/sam_e51_cnano/production/_ext/8444704/plib_systick.o
- .debug_frame   0x0000000000000858       0x28 build/sam_e51_cnano/production/_ext/570918426/initialization.o
- .debug_frame   0x0000000000000880       0x20 build/sam_e51_cnano/production/_ext/570918426/interrupts.o
- .debug_frame   0x00000000000008a0       0x70 build/sam_e51_cnano/production/_ext/570918426/exceptions.o
- .debug_frame   0x0000000000000910       0x38 build/sam_e51_cnano/production/_ext/570918426/startup_xc32.o
- .debug_frame   0x0000000000000948       0x28 build/sam_e51_cnano/production/_ext/570918426/tasks.o
- .debug_frame   0x0000000000000970       0x50 build/sam_e51_cnano/production/_ext/1360937237/app.o
- .debug_frame   0x00000000000009c0       0xa0 build/sam_e51_cnano/production/_ext/1360937237/app_live_update.o
- .debug_frame   0x0000000000000a60       0x28 build/sam_e51_cnano/production/_ext/1360937237/main.o
- .debug_frame   0x0000000000000a88       0x3c c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(data_init.o)
- .debug_frame   0x0000000000000ac4       0x3c c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-musl.a(__libc_start_main.o)
- .debug_frame   0x0000000000000b00       0x20 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_clear.o)
- .debug_frame   0x0000000000000b20       0x28 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_copy.o)
+ .debug_frame   0x0000000000000538      0x1dc build/sam_e51_cnano/production/_ext/314480351/plib_sercom5_usart.o
+ .debug_frame   0x0000000000000714       0xe0 build/sam_e51_cnano/production/_ext/8444704/plib_systick.o
+ .debug_frame   0x00000000000007f4       0x28 build/sam_e51_cnano/production/_ext/570918426/initialization.o
+ .debug_frame   0x000000000000081c       0x20 build/sam_e51_cnano/production/_ext/570918426/interrupts.o
+ .debug_frame   0x000000000000083c       0x70 build/sam_e51_cnano/production/_ext/570918426/exceptions.o
+ .debug_frame   0x00000000000008ac       0x38 build/sam_e51_cnano/production/_ext/570918426/startup_xc32.o
+ .debug_frame   0x00000000000008e4       0x28 build/sam_e51_cnano/production/_ext/570918426/tasks.o
+ .debug_frame   0x000000000000090c       0x50 build/sam_e51_cnano/production/_ext/1360937237/app.o
+ .debug_frame   0x000000000000095c       0xa0 build/sam_e51_cnano/production/_ext/1360937237/app_live_update.o
+ .debug_frame   0x00000000000009fc       0x28 build/sam_e51_cnano/production/_ext/1360937237/main.o
+ .debug_frame   0x0000000000000a24       0x3c c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(data_init.o)
+ .debug_frame   0x0000000000000a60       0x3c c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-musl.a(__libc_start_main.o)
+ .debug_frame   0x0000000000000a9c       0x20 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_clear.o)
+ .debug_frame   0x0000000000000abc       0x28 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_copy.o)
 
-.debug_loc      0x0000000000000000     0x2525
+.debug_loc      0x0000000000000000     0x255c
  .debug_loc     0x0000000000000000      0x1b6 build/sam_e51_cnano/production/_ext/1220119036/plib_dsu.o
  .debug_loc     0x00000000000001b6      0x209 build/sam_e51_cnano/production/_ext/830715028/plib_nvic.o
  .debug_loc     0x00000000000003bf      0x83e build/sam_e51_cnano/production/_ext/226030394/plib_nvmctrl.o
- .debug_loc     0x0000000000000bfd       0xef build/sam_e51_cnano/production/_ext/1220129992/plib_pac.o
- .debug_loc     0x0000000000000cec      0x1bc build/sam_e51_cnano/production/_ext/830661877/plib_port.o
- .debug_loc     0x0000000000000ea8       0xde build/sam_e51_cnano/production/_ext/1220132503/plib_rtc_timer.o
- .debug_loc     0x0000000000000f86      0xcc6 build/sam_e51_cnano/production/_ext/314480351/plib_sercom5_usart.o
- .debug_loc     0x0000000000001c4c      0x27d build/sam_e51_cnano/production/_ext/8444704/plib_systick.o
- .debug_loc     0x0000000000001ec9       0x45 build/sam_e51_cnano/production/_ext/570918426/initialization.o
- .debug_loc     0x0000000000001f0e       0x4a build/sam_e51_cnano/production/_ext/570918426/startup_xc32.o
- .debug_loc     0x0000000000001f58       0x20 build/sam_e51_cnano/production/_ext/570918426/tasks.o
- .debug_loc     0x0000000000001f78       0x40 build/sam_e51_cnano/production/_ext/1360937237/app.o
- .debug_loc     0x0000000000001fb8      0x4d4 build/sam_e51_cnano/production/_ext/1360937237/app_live_update.o
- .debug_loc     0x000000000000248c       0x20 build/sam_e51_cnano/production/_ext/1360937237/main.o
- .debug_loc     0x00000000000024ac       0x14 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(data_init.o)
- .debug_loc     0x00000000000024c0       0x51 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-musl.a(__libc_start_main.o)
- .debug_loc     0x0000000000002511       0x14 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_copy.o)
+ .debug_loc     0x0000000000000bfd       0xda build/sam_e51_cnano/production/_ext/1220129992/plib_pac.o
+ .debug_loc     0x0000000000000cd7      0x1bc build/sam_e51_cnano/production/_ext/830661877/plib_port.o
+ .debug_loc     0x0000000000000e93       0xb4 build/sam_e51_cnano/production/_ext/1220132503/plib_rtc_timer.o
+ .debug_loc     0x0000000000000f47      0xd3c build/sam_e51_cnano/production/_ext/314480351/plib_sercom5_usart.o
+ .debug_loc     0x0000000000001c83      0x27d build/sam_e51_cnano/production/_ext/8444704/plib_systick.o
+ .debug_loc     0x0000000000001f00       0x45 build/sam_e51_cnano/production/_ext/570918426/initialization.o
+ .debug_loc     0x0000000000001f45       0x4a build/sam_e51_cnano/production/_ext/570918426/startup_xc32.o
+ .debug_loc     0x0000000000001f8f       0x20 build/sam_e51_cnano/production/_ext/570918426/tasks.o
+ .debug_loc     0x0000000000001faf       0x40 build/sam_e51_cnano/production/_ext/1360937237/app.o
+ .debug_loc     0x0000000000001fef      0x4d4 build/sam_e51_cnano/production/_ext/1360937237/app_live_update.o
+ .debug_loc     0x00000000000024c3       0x20 build/sam_e51_cnano/production/_ext/1360937237/main.o
+ .debug_loc     0x00000000000024e3       0x14 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(data_init.o)
+ .debug_loc     0x00000000000024f7       0x51 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-musl.a(__libc_start_main.o)
+ .debug_loc     0x0000000000002548       0x14 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_copy.o)
 
 .note.GNU-stack
                 0x0000000000000000        0x0
@@ -1044,8 +1040,8 @@ LOAD stack
  .note.GNU-stack
                 0x0000000000000000        0x0 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-musl.a(__environ.o)
 
-.stack          0x0000000020004430      0x100
- .stack         0x0000000020004430      0x100 stack
+.stack          0x0000000020004420      0x100
+ .stack         0x0000000020004420      0x100 stack
 
 .bss.lu_input_buffer%1
                 0x0000000020000010     0x2004
@@ -1099,9 +1095,9 @@ LOAD stack
                 0x00000000200041d4        0x7 build/sam_e51_cnano/production/_ext/1360937237/app_live_update.o
                 0x00000000200041d4                app_live_update
 
-.bss.bytes_read.8975%11
+.bss.bytes_read.8970%11
                 0x00000000200041dc        0x4
- .bss.bytes_read.8975
+ .bss.bytes_read.8970
                 0x00000000200041dc        0x4 build/sam_e51_cnano/production/_ext/1360937237/app_live_update.o
 
 .bss.lu_flash_addr%12
@@ -1119,13 +1115,13 @@ LOAD stack
  .bss.lu_unlock_end
                 0x00000000200041e8        0x4 build/sam_e51_cnano/production/_ext/1360937237/app_live_update.o
 
-.bss.ptr.8976%15
+.bss.ptr.8971%15
                 0x00000000200041ec        0x4
- .bss.ptr.8976  0x00000000200041ec        0x4 build/sam_e51_cnano/production/_ext/1360937237/app_live_update.o
+ .bss.ptr.8971  0x00000000200041ec        0x4 build/sam_e51_cnano/production/_ext/1360937237/app_live_update.o
 
-.bss.size.8977%16
+.bss.size.8972%16
                 0x00000000200041f0        0x4
- .bss.size.8977
+ .bss.size.8972
                 0x00000000200041f0        0x4 build/sam_e51_cnano/production/_ext/1360937237/app_live_update.o
 
 .bss%17         0x00000000200041f4        0x4
@@ -1164,9 +1160,9 @@ LOAD stack
                 0x0000000020004201        0x1 build/sam_e51_cnano/production/_ext/1360937237/app_live_update.o
                 0x0000000020004201                changeSamplingRate
 
-.bss.header_received.8978%24
+.bss.header_received.8973%24
                 0x0000000020004202        0x1
- .bss.header_received.8978
+ .bss.header_received.8973
                 0x0000000020004202        0x1 build/sam_e51_cnano/production/_ext/1360937237/app_live_update.o
 
 .bss.isLiveUpdateFailure%25
@@ -1175,551 +1171,519 @@ LOAD stack
                 0x0000000020004203        0x1 build/sam_e51_cnano/production/_ext/1360937237/app_live_update.o
                 0x0000000020004203                isLiveUpdateFailure
 
-.bss.resp.8992%26
+.bss.resp.8987%26
                 0x0000000020004204        0x1
- .bss.resp.8992
+ .bss.resp.8987
                 0x0000000020004204        0x1 build/sam_e51_cnano/production/_ext/1360937237/app_live_update.o
-
-.data.messageA%27
-                0x0000000020004208        0x4
- .data.messageA
-                0x0000000020004208        0x4 build/sam_e51_cnano/production/_ext/1360937237/app.o
-                0x0000000020004208                messageA
-
-.data.messageB%28
-                0x000000002000420c        0x4
- .data.messageB
-                0x000000002000420c        0x4 build/sam_e51_cnano/production/_ext/1360937237/app.o
-                0x000000002000420c                messageB
 
 .eh_frame%z1    0x0000000000000000        0x0
  .eh_frame      0x0000000000000000        0x0 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v7e-m+fp/hard/crtbegin.o
 
-.text.APP_LIVE_UPDATE_ServiceTasks%29
-                0x0000000000002280      0x168
- .text.APP_LIVE_UPDATE_ServiceTasks
-                0x0000000000002280      0x168 build/sam_e51_cnano/production/_ext/1360937237/app_live_update.o
-                0x0000000000002280                APP_LIVE_UPDATE_ServiceTasks
-
-.text.APP_LIVE_UPDATE_Tasks%30
-                0x00000000000023e8      0x14c
- .text.APP_LIVE_UPDATE_Tasks
-                0x00000000000023e8      0x14c build/sam_e51_cnano/production/_ext/1360937237/app_live_update.o
-                0x00000000000023e8                APP_LIVE_UPDATE_Tasks
-
-.text.usart_ReadEventHandler%31
-                0x0000000000002534      0x120
- .text.usart_ReadEventHandler
-                0x0000000000002534      0x120 build/sam_e51_cnano/production/_ext/1360937237/app_live_update.o
-                0x0000000000002534                usart_ReadEventHandler
-
-.dinit%32       0x0000000000002654      0x110
- .dinit         0x0000000000002654      0x110 data_init
-
-.text.APP_Tasks%33
-                0x0000000000002764      0x100
- .text.APP_Tasks
-                0x0000000000002764      0x100 build/sam_e51_cnano/production/_ext/1360937237/app.o
-                0x0000000000002764                APP_Tasks
-
-.text.CLOCK_Initialize%34
-                0x0000000000002864       0xd8
- .text.CLOCK_Initialize
-                0x0000000000002864       0xd8 build/sam_e51_cnano/production/_ext/7187140/plib_clock.o
-                0x0000000000002864                CLOCK_Initialize
-
-.text.SERCOM5_USART_Write%35
-                0x000000000000293c       0xd8
- .text.SERCOM5_USART_Write
-                0x000000000000293c       0xd8 build/sam_e51_cnano/production/_ext/314480351/plib_sercom5_usart.o
-                0x000000000000293c                SERCOM5_USART_Write
-
-.text.SERCOM5_USART_ISR_RX_Handler%36
-                0x0000000000002a14       0xb8
- .text.SERCOM5_USART_ISR_RX_Handler
-                0x0000000000002a14       0xb8 build/sam_e51_cnano/production/_ext/314480351/plib_sercom5_usart.o
-
-.text.SERCOM5_USART_ISR_TX_Handler%37
-                0x0000000000002acc       0xa8
- .text.SERCOM5_USART_ISR_TX_Handler
-                0x0000000000002acc       0xa8 build/sam_e51_cnano/production/_ext/314480351/plib_sercom5_usart.o
-
-.text.Reset_Handler%38
-                0x0000000000002b74       0x88
- .text.Reset_Handler
-                0x0000000000002b74       0x88 build/sam_e51_cnano/production/_ext/570918426/startup_xc32.o
-                0x0000000000002b74                Reset_Handler
-
-.text.SERCOM5_USART_Read%39
-                0x0000000000002bfc       0x84
- .text.SERCOM5_USART_Read
-                0x0000000000002bfc       0x84 build/sam_e51_cnano/production/_ext/314480351/plib_sercom5_usart.o
-                0x0000000000002bfc                SERCOM5_USART_Read
-
-.text.NVIC_Initialize%40
-                0x0000000000002c80       0x7c
- .text.NVIC_Initialize
-                0x0000000000002c80       0x7c build/sam_e51_cnano/production/_ext/830715028/plib_nvic.o
-                0x0000000000002c80                NVIC_Initialize
-
-.text.SERCOM5_USART_Initialize%41
-                0x0000000000002cfc       0x7c
- .text.SERCOM5_USART_Initialize
-                0x0000000000002cfc       0x7c build/sam_e51_cnano/production/_ext/314480351/plib_sercom5_usart.o
-                0x0000000000002cfc                SERCOM5_USART_Initialize
-
-.text.__libc_start_init%42
-                0x0000000000002d78       0x5c
- .text.__libc_start_init
-                0x0000000000002d78       0x5c c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-musl.a(__libc_start_main.o)
-                0x0000000000002d78                __libc_init_array
-
-.text.SERCOM5_USART_InterruptHandler%43
-                0x0000000000002dd4       0x58
+.text.SERCOM5_USART_InterruptHandler%27
+                0x0000000000002280      0x1d4
  .text.SERCOM5_USART_InterruptHandler
-                0x0000000000002dd4       0x58 build/sam_e51_cnano/production/_ext/314480351/plib_sercom5_usart.o
-                0x0000000000002dd4                SERCOM5_USART_InterruptHandler
+                0x0000000000002280      0x1d4 build/sam_e51_cnano/production/_ext/314480351/plib_sercom5_usart.o
+                0x0000000000002280                SERCOM5_USART_InterruptHandler
 
-.rodata.str1.4%44
-                0x0000000000002e2c       0x58
- .rodata.str1.4
-                0x0000000000002e2c       0x58 build/sam_e51_cnano/production/_ext/1360937237/app.o
+.text.APP_LIVE_UPDATE_ServiceTasks%28
+                0x0000000000002454      0x168
+ .text.APP_LIVE_UPDATE_ServiceTasks
+                0x0000000000002454      0x168 build/sam_e51_cnano/production/_ext/1360937237/app_live_update.o
+                0x0000000000002454                APP_LIVE_UPDATE_ServiceTasks
 
-.text.RTC_Initialize%45
-                0x0000000000002e84       0x54
+.text.APP_LIVE_UPDATE_Tasks%29
+                0x00000000000025bc      0x14c
+ .text.APP_LIVE_UPDATE_Tasks
+                0x00000000000025bc      0x14c build/sam_e51_cnano/production/_ext/1360937237/app_live_update.o
+                0x00000000000025bc                APP_LIVE_UPDATE_Tasks
+
+.text.usart_ReadEventHandler%30
+                0x0000000000002708      0x120
+ .text.usart_ReadEventHandler
+                0x0000000000002708      0x120 build/sam_e51_cnano/production/_ext/1360937237/app_live_update.o
+                0x0000000000002708                usart_ReadEventHandler
+
+.dinit%31       0x0000000000002828      0x100
+ .dinit         0x0000000000002828      0x100 data_init
+
+.text.CLOCK_Initialize%32
+                0x0000000000002928       0xd8
+ .text.CLOCK_Initialize
+                0x0000000000002928       0xd8 build/sam_e51_cnano/production/_ext/7187140/plib_clock.o
+                0x0000000000002928                CLOCK_Initialize
+
+.text.SERCOM5_USART_Write%33
+                0x0000000000002a00       0xd8
+ .text.SERCOM5_USART_Write
+                0x0000000000002a00       0xd8 build/sam_e51_cnano/production/_ext/314480351/plib_sercom5_usart.o
+                0x0000000000002a00                SERCOM5_USART_Write
+
+.text.APP_Tasks%34
+                0x0000000000002ad8       0xd4
+ .text.APP_Tasks
+                0x0000000000002ad8       0xd4 build/sam_e51_cnano/production/_ext/1360937237/app.o
+                0x0000000000002ad8                APP_Tasks
+
+.text.Reset_Handler%35
+                0x0000000000002bac       0x88
+ .text.Reset_Handler
+                0x0000000000002bac       0x88 build/sam_e51_cnano/production/_ext/570918426/startup_xc32.o
+                0x0000000000002bac                Reset_Handler
+
+.text.SERCOM5_USART_Initialize%36
+                0x0000000000002c34       0x7c
+ .text.SERCOM5_USART_Initialize
+                0x0000000000002c34       0x7c build/sam_e51_cnano/production/_ext/314480351/plib_sercom5_usart.o
+                0x0000000000002c34                SERCOM5_USART_Initialize
+
+.text.SERCOM5_USART_Read%37
+                0x0000000000002cb0       0x7c
+ .text.SERCOM5_USART_Read
+                0x0000000000002cb0       0x7c build/sam_e51_cnano/production/_ext/314480351/plib_sercom5_usart.o
+                0x0000000000002cb0                SERCOM5_USART_Read
+
+.text.NVIC_Initialize%38
+                0x0000000000002d2c       0x74
+ .text.NVIC_Initialize
+                0x0000000000002d2c       0x74 build/sam_e51_cnano/production/_ext/830715028/plib_nvic.o
+                0x0000000000002d2c                NVIC_Initialize
+
+.text.__libc_start_init%39
+                0x0000000000002da0       0x5c
+ .text.__libc_start_init
+                0x0000000000002da0       0x5c c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-musl.a(__libc_start_main.o)
+                0x0000000000002da0                __libc_init_array
+
+.text.RTC_Initialize%40
+                0x0000000000002dfc       0x54
  .text.RTC_Initialize
-                0x0000000000002e84       0x54 build/sam_e51_cnano/production/_ext/1220132503/plib_rtc_timer.o
-                0x0000000000002e84                RTC_Initialize
+                0x0000000000002dfc       0x54 build/sam_e51_cnano/production/_ext/1220132503/plib_rtc_timer.o
+                0x0000000000002dfc                RTC_Initialize
 
-.text.DSU_CRCCalculate%46
-                0x0000000000002ed8       0x4c
+.text.DSU_CRCCalculate%41
+                0x0000000000002e50       0x4c
  .text.DSU_CRCCalculate
-                0x0000000000002ed8       0x4c build/sam_e51_cnano/production/_ext/1220119036/plib_dsu.o
-                0x0000000000002ed8                DSU_CRCCalculate
+                0x0000000000002e50       0x4c build/sam_e51_cnano/production/_ext/1220119036/plib_dsu.o
+                0x0000000000002e50                DSU_CRCCalculate
 
-.text.SERCOM5_USART_ISR_ERR_Handler%47
-                0x0000000000002f24       0x4c
- .text.SERCOM5_USART_ISR_ERR_Handler
-                0x0000000000002f24       0x4c build/sam_e51_cnano/production/_ext/314480351/plib_sercom5_usart.o
+.text%42        0x0000000000002e9c       0x40
+ .text          0x0000000000002e9c       0x40 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v7e-m+fp/hard/crtbegin.o
 
-.text%48        0x0000000000002f70       0x40
- .text          0x0000000000002f70       0x40 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/thumb/v7e-m+fp/hard/crtbegin.o
-
-.text.NVMCTRL_PageWrite%49
-                0x0000000000002fb0       0x40
+.text.NVMCTRL_PageWrite%43
+                0x0000000000002edc       0x40
  .text.NVMCTRL_PageWrite
-                0x0000000000002fb0       0x40 build/sam_e51_cnano/production/_ext/226030394/plib_nvmctrl.o
-                0x0000000000002fb0                NVMCTRL_PageWrite
+                0x0000000000002edc       0x40 build/sam_e51_cnano/production/_ext/226030394/plib_nvmctrl.o
+                0x0000000000002edc                NVMCTRL_PageWrite
 
-.text.PAC_InterruptHandler%50
-                0x0000000000002ff0       0x3c
- .text.PAC_InterruptHandler
-                0x0000000000002ff0       0x3c build/sam_e51_cnano/production/_ext/1220129992/plib_pac.o
-                0x0000000000002ff0                PAC_InterruptHandler
-
-.text.PORT_Initialize%51
-                0x000000000000302c       0x3c
+.text.PORT_Initialize%44
+                0x0000000000002f1c       0x3c
  .text.PORT_Initialize
-                0x000000000000302c       0x3c build/sam_e51_cnano/production/_ext/830661877/plib_port.o
-                0x000000000000302c                PORT_Initialize
+                0x0000000000002f1c       0x3c build/sam_e51_cnano/production/_ext/830661877/plib_port.o
+                0x0000000000002f1c                PORT_Initialize
 
-.text.SYS_Initialize%52
-                0x0000000000003068       0x34
+.text.PAC_InterruptHandler%45
+                0x0000000000002f58       0x38
+ .text.PAC_InterruptHandler
+                0x0000000000002f58       0x38 build/sam_e51_cnano/production/_ext/1220129992/plib_pac.o
+                0x0000000000002f58                PAC_InterruptHandler
+
+.text.SYS_Initialize%46
+                0x0000000000002f90       0x34
  .text.SYS_Initialize
-                0x0000000000003068       0x34 build/sam_e51_cnano/production/_ext/570918426/initialization.o
-                0x0000000000003068                SYS_Initialize
+                0x0000000000002f90       0x34 build/sam_e51_cnano/production/_ext/570918426/initialization.o
+                0x0000000000002f90                SYS_Initialize
 
-.text.__pic32c_data_initialization%53
-                0x000000000000309c       0x34
+.text.__pic32c_data_initialization%47
+                0x0000000000002fc4       0x34
  .text.__pic32c_data_initialization
-                0x000000000000309c       0x34 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(data_init.o)
-                0x000000000000309c                __pic32c_data_initialization
+                0x0000000000002fc4       0x34 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(data_init.o)
+                0x0000000000002fc4                __pic32c_data_initialization
 
-.text.RTC_InterruptHandler%54
-                0x00000000000030d0       0x2c
+.text.RTC_InterruptHandler%48
+                0x0000000000002ff8       0x28
  .text.RTC_InterruptHandler
-                0x00000000000030d0       0x2c build/sam_e51_cnano/production/_ext/1220132503/plib_rtc_timer.o
-                0x00000000000030d0                RTC_InterruptHandler
+                0x0000000000002ff8       0x28 build/sam_e51_cnano/production/_ext/1220132503/plib_rtc_timer.o
+                0x0000000000002ff8                RTC_InterruptHandler
 
-.text.APP_Initialize%55
-                0x00000000000030fc       0x28
+.text.APP_Initialize%49
+                0x0000000000003020       0x28
  .text.APP_Initialize
-                0x00000000000030fc       0x28 build/sam_e51_cnano/production/_ext/1360937237/app.o
-                0x00000000000030fc                APP_Initialize
+                0x0000000000003020       0x28 build/sam_e51_cnano/production/_ext/1360937237/app.o
+                0x0000000000003020                APP_Initialize
 
-.text.send_Response%56
-                0x0000000000003124       0x24
+.text.send_Response%50
+                0x0000000000003048       0x24
  .text.send_Response
-                0x0000000000003124       0x24 build/sam_e51_cnano/production/_ext/1360937237/app_live_update.o
+                0x0000000000003048       0x24 build/sam_e51_cnano/production/_ext/1360937237/app_live_update.o
 
-.text.__dinit_copy%57
-                0x0000000000003148       0x1e
+.text.__dinit_copy%51
+                0x000000000000306c       0x1e
  .text.__dinit_copy
-                0x0000000000003148       0x1e c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_copy.o)
-                0x0000000000003148                __dinit_copy_needed
-                0x0000000000003148                __dinit_copy
+                0x000000000000306c       0x1e c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_copy.o)
+                0x000000000000306c                __dinit_copy_needed
+                0x000000000000306c                __dinit_copy
 
-.text.NVMCTRL_BlockErase%58
-                0x0000000000003168       0x1c
+.text.NVMCTRL_BlockErase%52
+                0x000000000000308c       0x1c
  .text.NVMCTRL_BlockErase
-                0x0000000000003168       0x1c build/sam_e51_cnano/production/_ext/226030394/plib_nvmctrl.o
-                0x0000000000003168                NVMCTRL_BlockErase
+                0x000000000000308c       0x1c build/sam_e51_cnano/production/_ext/226030394/plib_nvmctrl.o
+                0x000000000000308c                NVMCTRL_BlockErase
 
-.text.SYSTICK_TimerInitialize%59
-                0x0000000000003184       0x1c
+.text.SYSTICK_TimerInitialize%53
+                0x00000000000030a8       0x1c
  .text.SYSTICK_TimerInitialize
-                0x0000000000003184       0x1c build/sam_e51_cnano/production/_ext/8444704/plib_systick.o
-                0x0000000000003184                SYSTICK_TimerInitialize
+                0x00000000000030a8       0x1c build/sam_e51_cnano/production/_ext/8444704/plib_systick.o
+                0x00000000000030a8                SYSTICK_TimerInitialize
 
-.text.SYSTICK_TimerRestart%60
-                0x00000000000031a0       0x1c
+.text.SYSTICK_TimerRestart%54
+                0x00000000000030c4       0x1c
  .text.SYSTICK_TimerRestart
-                0x00000000000031a0       0x1c build/sam_e51_cnano/production/_ext/8444704/plib_systick.o
-                0x00000000000031a0                SYSTICK_TimerRestart
+                0x00000000000030c4       0x1c build/sam_e51_cnano/production/_ext/8444704/plib_systick.o
+                0x00000000000030c4                SYSTICK_TimerRestart
 
-.text.APP_LIVE_UPDATE_Initialize%61
-                0x00000000000031bc       0x1c
+.text.APP_LIVE_UPDATE_Initialize%55
+                0x00000000000030e0       0x1c
  .text.APP_LIVE_UPDATE_Initialize
-                0x00000000000031bc       0x1c build/sam_e51_cnano/production/_ext/1360937237/app_live_update.o
-                0x00000000000031bc                APP_LIVE_UPDATE_Initialize
+                0x00000000000030e0       0x1c build/sam_e51_cnano/production/_ext/1360937237/app_live_update.o
+                0x00000000000030e0                APP_LIVE_UPDATE_Initialize
 
-.text.RTC_Timer32Start%62
-                0x00000000000031d8       0x18
+.text.RTC_Timer32Start%56
+                0x00000000000030fc       0x18
  .text.RTC_Timer32Start
-                0x00000000000031d8       0x18 build/sam_e51_cnano/production/_ext/1220132503/plib_rtc_timer.o
-                0x00000000000031d8                RTC_Timer32Start
+                0x00000000000030fc       0x18 build/sam_e51_cnano/production/_ext/1220132503/plib_rtc_timer.o
+                0x00000000000030fc                RTC_Timer32Start
 
-.text.SERCOM5_USART_WritePendingBytesGet%63
-                0x00000000000031f0       0x18
+.text.SERCOM5_USART_WritePendingBytesGet%57
+                0x0000000000003114       0x18
  .text.SERCOM5_USART_WritePendingBytesGet
-                0x00000000000031f0       0x18 build/sam_e51_cnano/production/_ext/314480351/plib_sercom5_usart.o
+                0x0000000000003114       0x18 build/sam_e51_cnano/production/_ext/314480351/plib_sercom5_usart.o
 
-.text.SERCOM5_USART_ReadCountGet%64
-                0x0000000000003208       0x18
+.text.SERCOM5_USART_ReadCountGet%58
+                0x000000000000312c       0x18
  .text.SERCOM5_USART_ReadCountGet
-                0x0000000000003208       0x18 build/sam_e51_cnano/production/_ext/314480351/plib_sercom5_usart.o
-                0x0000000000003208                SERCOM5_USART_ReadCountGet
+                0x000000000000312c       0x18 build/sam_e51_cnano/production/_ext/314480351/plib_sercom5_usart.o
+                0x000000000000312c                SERCOM5_USART_ReadCountGet
 
-.text.SERCOM5_USART_ReadNotificationEnable%65
-                0x0000000000003220       0x18
+.text.SERCOM5_USART_ReadNotificationEnable%59
+                0x0000000000003144       0x18
  .text.SERCOM5_USART_ReadNotificationEnable
-                0x0000000000003220       0x18 build/sam_e51_cnano/production/_ext/314480351/plib_sercom5_usart.o
-                0x0000000000003220                SERCOM5_USART_ReadNotificationEnable
+                0x0000000000003144       0x18 build/sam_e51_cnano/production/_ext/314480351/plib_sercom5_usart.o
+                0x0000000000003144                SERCOM5_USART_ReadNotificationEnable
 
-.text.BSP_Initialize%66
-                0x0000000000003238       0x14
+.text.BSP_Initialize%60
+                0x000000000000315c       0x14
  .text.BSP_Initialize
-                0x0000000000003238       0x14 build/sam_e51_cnano/production/_ext/673975658/bsp.o
-                0x0000000000003238                BSP_Initialize
+                0x000000000000315c       0x14 build/sam_e51_cnano/production/_ext/673975658/bsp.o
+                0x000000000000315c                BSP_Initialize
 
-.text.NVMCTRL_IsBusy%67
-                0x000000000000324c       0x14
+.text.NVMCTRL_IsBusy%61
+                0x0000000000003170       0x14
  .text.NVMCTRL_IsBusy
-                0x000000000000324c       0x14 build/sam_e51_cnano/production/_ext/226030394/plib_nvmctrl.o
-                0x000000000000324c                NVMCTRL_IsBusy
+                0x0000000000003170       0x14 build/sam_e51_cnano/production/_ext/226030394/plib_nvmctrl.o
+                0x0000000000003170                NVMCTRL_IsBusy
 
-.text.RTC_Timer32Compare0Set%68
-                0x0000000000003260       0x14
+.text.RTC_Timer32Compare0Set%62
+                0x0000000000003184       0x14
  .text.RTC_Timer32Compare0Set
-                0x0000000000003260       0x14 build/sam_e51_cnano/production/_ext/1220132503/plib_rtc_timer.o
-                0x0000000000003260                RTC_Timer32Compare0Set
+                0x0000000000003184       0x14 build/sam_e51_cnano/production/_ext/1220132503/plib_rtc_timer.o
+                0x0000000000003184                RTC_Timer32Compare0Set
 
-.text.SERCOM5_USART_WriteFreeBufferCountGet%69
-                0x0000000000003274       0x14
+.text.SERCOM5_USART_WriteFreeBufferCountGet%63
+                0x0000000000003198       0x14
  .text.SERCOM5_USART_WriteFreeBufferCountGet
-                0x0000000000003274       0x14 build/sam_e51_cnano/production/_ext/314480351/plib_sercom5_usart.o
-                0x0000000000003274                SERCOM5_USART_WriteFreeBufferCountGet
+                0x0000000000003198       0x14 build/sam_e51_cnano/production/_ext/314480351/plib_sercom5_usart.o
+                0x0000000000003198                SERCOM5_USART_WriteFreeBufferCountGet
 
-.text.SYSTICK_TimerStart%70
-                0x0000000000003288       0x14
+.text.SYSTICK_TimerStart%64
+                0x00000000000031ac       0x14
  .text.SYSTICK_TimerStart
-                0x0000000000003288       0x14 build/sam_e51_cnano/production/_ext/8444704/plib_systick.o
-                0x0000000000003288                SYSTICK_TimerStart
+                0x00000000000031ac       0x14 build/sam_e51_cnano/production/_ext/8444704/plib_systick.o
+                0x00000000000031ac                SYSTICK_TimerStart
 
-.text.rtcEventHandler%71
-                0x000000000000329c       0x14
+.text.rtcEventHandler%65
+                0x00000000000031c0       0x14
  .text.rtcEventHandler
-                0x000000000000329c       0x14 build/sam_e51_cnano/production/_ext/1360937237/app.o
+                0x00000000000031c0       0x14 build/sam_e51_cnano/production/_ext/1360937237/app.o
 
-.rodata%72      0x00000000000032b0       0x14
- .rodata        0x00000000000032b0       0x14 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(data_init.o)
+.rodata%66      0x00000000000031d4       0x14
+ .rodata        0x00000000000031d4       0x14 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(data_init.o)
 
-.text.__dinit_clear%73
-                0x00000000000032c4       0x12
+.text.__dinit_clear%67
+                0x00000000000031e8       0x12
  .text.__dinit_clear
-                0x00000000000032c4       0x12 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_clear.o)
-                0x00000000000032c4                __dinit_clear
-                0x00000000000032c4                __dinit_clear_needed
+                0x00000000000031e8       0x12 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(pic32_data_init_clear.o)
+                0x00000000000031e8                __dinit_clear
+                0x00000000000031e8                __dinit_clear_needed
 
-.text.NVMCTRL_Initialize%74
-                0x00000000000032d8       0x10
+.text.NVMCTRL_Initialize%68
+                0x00000000000031fc       0x10
  .text.NVMCTRL_Initialize
-                0x00000000000032d8       0x10 build/sam_e51_cnano/production/_ext/226030394/plib_nvmctrl.o
-                0x00000000000032d8                NVMCTRL_Initialize
+                0x00000000000031fc       0x10 build/sam_e51_cnano/production/_ext/226030394/plib_nvmctrl.o
+                0x00000000000031fc                NVMCTRL_Initialize
 
-.text.NVMCTRL_RegionUnlock%75
-                0x00000000000032e8       0x10
+.text.NVMCTRL_RegionUnlock%69
+                0x000000000000320c       0x10
  .text.NVMCTRL_RegionUnlock
-                0x00000000000032e8       0x10 build/sam_e51_cnano/production/_ext/226030394/plib_nvmctrl.o
-                0x00000000000032e8                NVMCTRL_RegionUnlock
+                0x000000000000320c       0x10 build/sam_e51_cnano/production/_ext/226030394/plib_nvmctrl.o
+                0x000000000000320c                NVMCTRL_RegionUnlock
 
-.text.NVMCTRL_BankSwap%76
-                0x00000000000032f8       0x10
+.text.NVMCTRL_BankSwap%70
+                0x000000000000321c       0x10
  .text.NVMCTRL_BankSwap
-                0x00000000000032f8       0x10 build/sam_e51_cnano/production/_ext/226030394/plib_nvmctrl.o
-                0x00000000000032f8                NVMCTRL_BankSwap
+                0x000000000000321c       0x10 build/sam_e51_cnano/production/_ext/226030394/plib_nvmctrl.o
+                0x000000000000321c                NVMCTRL_BankSwap
 
-.text.SERCOM5_USART_ErrorGet%77
-                0x0000000000003308       0x10
+.text.SERCOM5_USART_ErrorGet%71
+                0x000000000000322c       0x10
  .text.SERCOM5_USART_ErrorGet
-                0x0000000000003308       0x10 build/sam_e51_cnano/production/_ext/314480351/plib_sercom5_usart.o
-                0x0000000000003308                SERCOM5_USART_ErrorGet
+                0x000000000000322c       0x10 build/sam_e51_cnano/production/_ext/314480351/plib_sercom5_usart.o
+                0x000000000000322c                SERCOM5_USART_ErrorGet
 
-.text.SYSTICK_TimerPeriodHasExpired%78
-                0x0000000000003318       0x10
+.text.SYSTICK_TimerPeriodHasExpired%72
+                0x000000000000323c       0x10
  .text.SYSTICK_TimerPeriodHasExpired
-                0x0000000000003318       0x10 build/sam_e51_cnano/production/_ext/8444704/plib_systick.o
-                0x0000000000003318                SYSTICK_TimerPeriodHasExpired
+                0x000000000000323c       0x10 build/sam_e51_cnano/production/_ext/8444704/plib_systick.o
+                0x000000000000323c                SYSTICK_TimerPeriodHasExpired
 
-.text.PAC_PeripheralProtectSetup%79
-                0x0000000000003328        0xe
+.text.PAC_PeripheralProtectSetup%73
+                0x000000000000324c        0xe
  .text.PAC_PeripheralProtectSetup
-                0x0000000000003328        0xe build/sam_e51_cnano/production/_ext/1220129992/plib_pac.o
-                0x0000000000003328                PAC_PeripheralProtectSetup
+                0x000000000000324c        0xe build/sam_e51_cnano/production/_ext/1220129992/plib_pac.o
+                0x000000000000324c                PAC_PeripheralProtectSetup
 
-.text.main%80   0x0000000000003336        0xe
- .text.main     0x0000000000003336        0xe build/sam_e51_cnano/production/_ext/1360937237/main.o
-                0x0000000000003336                main
+.text.main%74   0x000000000000325a        0xe
+ .text.main     0x000000000000325a        0xe build/sam_e51_cnano/production/_ext/1360937237/main.o
+                0x000000000000325a                main
 
-.text.NVMCTRL_StatusGet%81
-                0x0000000000003344        0xc
+.text.NVMCTRL_StatusGet%75
+                0x0000000000003268        0xc
  .text.NVMCTRL_StatusGet
-                0x0000000000003344        0xc build/sam_e51_cnano/production/_ext/226030394/plib_nvmctrl.o
-                0x0000000000003344                NVMCTRL_StatusGet
+                0x0000000000003268        0xc build/sam_e51_cnano/production/_ext/226030394/plib_nvmctrl.o
+                0x0000000000003268                NVMCTRL_StatusGet
 
-.text.RTC_Timer32CallbackRegister%82
-                0x0000000000003350        0xc
+.text.RTC_Timer32CallbackRegister%76
+                0x0000000000003274        0xc
  .text.RTC_Timer32CallbackRegister
-                0x0000000000003350        0xc build/sam_e51_cnano/production/_ext/1220132503/plib_rtc_timer.o
-                0x0000000000003350                RTC_Timer32CallbackRegister
+                0x0000000000003274        0xc build/sam_e51_cnano/production/_ext/1220132503/plib_rtc_timer.o
+                0x0000000000003274                RTC_Timer32CallbackRegister
 
-.text.SERCOM5_USART_ReadThresholdSet%83
-                0x000000000000335c        0xc
+.text.SERCOM5_USART_ReadThresholdSet%77
+                0x0000000000003280        0xc
  .text.SERCOM5_USART_ReadThresholdSet
-                0x000000000000335c        0xc build/sam_e51_cnano/production/_ext/314480351/plib_sercom5_usart.o
-                0x000000000000335c                SERCOM5_USART_ReadThresholdSet
+                0x0000000000003280        0xc build/sam_e51_cnano/production/_ext/314480351/plib_sercom5_usart.o
+                0x0000000000003280                SERCOM5_USART_ReadThresholdSet
 
-.text.SERCOM5_USART_ReadCallbackRegister%84
-                0x0000000000003368        0xc
+.text.SERCOM5_USART_ReadCallbackRegister%78
+                0x000000000000328c        0xc
  .text.SERCOM5_USART_ReadCallbackRegister
-                0x0000000000003368        0xc build/sam_e51_cnano/production/_ext/314480351/plib_sercom5_usart.o
-                0x0000000000003368                SERCOM5_USART_ReadCallbackRegister
+                0x000000000000328c        0xc build/sam_e51_cnano/production/_ext/314480351/plib_sercom5_usart.o
+                0x000000000000328c                SERCOM5_USART_ReadCallbackRegister
 
-.text.SYS_Tasks%85
-                0x0000000000003374        0xc
+.text.SYS_Tasks%79
+                0x0000000000003298        0xc
  .text.SYS_Tasks
-                0x0000000000003374        0xc build/sam_e51_cnano/production/_ext/570918426/tasks.o
-                0x0000000000003374                SYS_Tasks
+                0x0000000000003298        0xc build/sam_e51_cnano/production/_ext/570918426/tasks.o
+                0x0000000000003298                SYS_Tasks
 
-.text.PAC_Initialize%86
-                0x0000000000003380        0xa
+.text.PAC_Initialize%80
+                0x00000000000032a4        0xa
  .text.PAC_Initialize
-                0x0000000000003380        0xa build/sam_e51_cnano/production/_ext/1220129992/plib_pac.o
-                0x0000000000003380                PAC_Initialize
+                0x00000000000032a4        0xa build/sam_e51_cnano/production/_ext/1220129992/plib_pac.o
+                0x00000000000032a4                PAC_Initialize
 
-.text.SERCOM5_USART_WriteCountGet%87
-                0x000000000000338a        0x8
+.text.SERCOM5_USART_WriteCountGet%81
+                0x00000000000032ae        0x8
  .text.SERCOM5_USART_WriteCountGet
-                0x000000000000338a        0x8 build/sam_e51_cnano/production/_ext/314480351/plib_sercom5_usart.o
-                0x000000000000338a                SERCOM5_USART_WriteCountGet
+                0x00000000000032ae        0x8 build/sam_e51_cnano/production/_ext/314480351/plib_sercom5_usart.o
+                0x00000000000032ae                SERCOM5_USART_WriteCountGet
 
-.text.__dummy_decompress%88
-                0x0000000000003392        0x4
+.text.__dummy_decompress%82
+                0x00000000000032b6        0x4
  .text.__dummy_decompress
-                0x0000000000003392        0x4 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(data_init.o)
-                0x0000000000003392                __dinit_decompress
-                0x0000000000003392                __dinit_copy_val_data
-                0x0000000000003392                __dinit_copy_emb
+                0x00000000000032b6        0x4 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libpic32c.a(data_init.o)
+                0x00000000000032b6                __dinit_decompress
+                0x00000000000032b6                __dinit_copy_val_data
+                0x00000000000032b6                __dinit_copy_emb
 
-.text.EVSYS_Initialize%89
-                0x0000000000003166        0x2
+.text.EVSYS_Initialize%83
+                0x000000000000308a        0x2
  .text.EVSYS_Initialize
-                0x0000000000003166        0x2 build/sam_e51_cnano/production/_ext/9336626/plib_evsys.o
-                0x0000000000003166                EVSYS_Initialize
+                0x000000000000308a        0x2 build/sam_e51_cnano/production/_ext/9336626/plib_evsys.o
+                0x000000000000308a                EVSYS_Initialize
 
-.text.Dummy_Handler%90
-                0x00000000000032d6        0x2
+.text.Dummy_Handler%84
+                0x00000000000031fa        0x2
  .text.Dummy_Handler
-                0x00000000000032d6        0x2 build/sam_e51_cnano/production/_ext/570918426/interrupts.o
-                0x00000000000032d6                EIC_EXTINT_9_Handler
-                0x00000000000032d6                TCC0_MC5_Handler
-                0x00000000000032d6                SVCall_Handler
-                0x00000000000032d6                SERCOM0_2_Handler
-                0x00000000000032d6                USB_SOF_HSOF_Handler
-                0x00000000000032d6                TCC4_OTHER_Handler
-                0x00000000000032d6                TCC2_MC2_Handler
-                0x00000000000032d6                EVSYS_0_Handler
-                0x00000000000032d6                TRNG_Handler
-                0x00000000000032d6                TC2_Handler
-                0x00000000000032d6                USB_TRCPT0_Handler
-                0x00000000000032d6                DAC_OTHER_Handler
-                0x00000000000032d6                AC_Handler
-                0x00000000000032d6                DAC_EMPTY_0_Handler
-                0x00000000000032d6                DMAC_OTHER_Handler
-                0x00000000000032d6                EIC_EXTINT_5_Handler
-                0x00000000000032d6                SERCOM3_1_Handler
-                0x00000000000032d6                SysTick_Handler
-                0x00000000000032d6                SERCOM4_OTHER_Handler
-                0x00000000000032d6                SERCOM3_2_Handler
-                0x00000000000032d6                EIC_EXTINT_6_Handler
-                0x00000000000032d6                PendSV_Handler
-                0x00000000000032d6                TCC4_MC0_Handler
-                0x00000000000032d6                EVSYS_3_Handler
-                0x00000000000032d6                QSPI_Handler
-                0x00000000000032d6                TCC2_MC0_Handler
-                0x00000000000032d6                PDEC_OTHER_Handler
-                0x00000000000032d6                TCC3_MC0_Handler
-                0x00000000000032d6                PDEC_MC1_Handler
-                0x00000000000032d6                TCC2_MC1_Handler
-                0x00000000000032d6                OSCCTRL_XOSC1_Handler
-                0x00000000000032d6                PDEC_MC0_Handler
-                0x00000000000032d6                EIC_EXTINT_4_Handler
-                0x00000000000032d6                EIC_EXTINT_7_Handler
-                0x00000000000032d6                SERCOM0_OTHER_Handler
-                0x00000000000032d6                EVSYS_OTHER_Handler
-                0x00000000000032d6                SERCOM0_0_Handler
-                0x00000000000032d6                SERCOM4_0_Handler
-                0x00000000000032d6                TCC1_MC0_Handler
-                0x00000000000032d6                SERCOM1_OTHER_Handler
-                0x00000000000032d6                TCC2_OTHER_Handler
-                0x00000000000032d6                EIC_EXTINT_11_Handler
-                0x00000000000032d6                SUPC_BODDET_Handler
-                0x00000000000032d6                EIC_EXTINT_14_Handler
-                0x00000000000032d6                OSC32KCTRL_Handler
-                0x00000000000032d6                EVSYS_1_Handler
-                0x00000000000032d6                TCC4_MC1_Handler
-                0x00000000000032d6                DMAC_0_Handler
-                0x00000000000032d6                SUPC_OTHER_Handler
-                0x00000000000032d6                WDT_Handler
-                0x00000000000032d6                CAN0_Handler
-                0x00000000000032d6                EIC_EXTINT_15_Handler
-                0x00000000000032d6                EIC_EXTINT_1_Handler
-                0x00000000000032d6                TCC3_MC1_Handler
-                0x00000000000032d6                TC4_Handler
-                0x00000000000032d6                TC1_Handler
-                0x00000000000032d6                TCC1_MC1_Handler
-                0x00000000000032d6                EIC_EXTINT_0_Handler
-                0x00000000000032d6                TCC1_OTHER_Handler
-                0x00000000000032d6                SERCOM4_1_Handler
-                0x00000000000032d6                TC3_Handler
-                0x00000000000032d6                Dummy_Handler
-                0x00000000000032d6                DAC_RESRDY_0_Handler
-                0x00000000000032d6                DMAC_2_Handler
-                0x00000000000032d6                TCC0_MC4_Handler
-                0x00000000000032d6                USB_TRCPT1_Handler
-                0x00000000000032d6                SERCOM0_1_Handler
-                0x00000000000032d6                TCC0_MC3_Handler
-                0x00000000000032d6                EIC_EXTINT_12_Handler
-                0x00000000000032d6                OSCCTRL_DPLL0_Handler
-                0x00000000000032d6                PM_Handler
-                0x00000000000032d6                OSCCTRL_DFLL_Handler
-                0x00000000000032d6                DAC_RESRDY_1_Handler
-                0x00000000000032d6                DMAC_1_Handler
-                0x00000000000032d6                USB_OTHER_Handler
-                0x00000000000032d6                CAN1_Handler
-                0x00000000000032d6                TCC0_OTHER_Handler
-                0x00000000000032d6                EIC_EXTINT_10_Handler
-                0x00000000000032d6                TCC1_MC3_Handler
-                0x00000000000032d6                OSCCTRL_XOSC0_Handler
-                0x00000000000032d6                TCC0_MC0_Handler
-                0x00000000000032d6                EIC_EXTINT_2_Handler
-                0x00000000000032d6                SDHC0_Handler
-                0x00000000000032d6                SERCOM1_1_Handler
-                0x00000000000032d6                I2S_Handler
-                0x00000000000032d6                PCC_Handler
-                0x00000000000032d6                TCC3_OTHER_Handler
-                0x00000000000032d6                EIC_EXTINT_13_Handler
-                0x00000000000032d6                SERCOM1_0_Handler
-                0x00000000000032d6                PUKCC_Handler
-                0x00000000000032d6                SERCOM2_1_Handler
-                0x00000000000032d6                SERCOM1_2_Handler
-                0x00000000000032d6                SERCOM3_0_Handler
-                0x00000000000032d6                SERCOM4_2_Handler
-                0x00000000000032d6                TCC1_MC2_Handler
-                0x00000000000032d6                ADC1_RESRDY_Handler
-                0x00000000000032d6                NVMCTRL_1_Handler
-                0x00000000000032d6                SERCOM2_2_Handler
-                0x00000000000032d6                DAC_EMPTY_1_Handler
-                0x00000000000032d6                ADC1_OTHER_Handler
-                0x00000000000032d6                OSCCTRL_DPLL1_Handler
-                0x00000000000032d6                EIC_EXTINT_3_Handler
-                0x00000000000032d6                SERCOM3_OTHER_Handler
-                0x00000000000032d6                EIC_EXTINT_8_Handler
-                0x00000000000032d6                NVMCTRL_0_Handler
-                0x00000000000032d6                ADC0_RESRDY_Handler
-                0x00000000000032d6                ADC0_OTHER_Handler
-                0x00000000000032d6                MCLK_Handler
-                0x00000000000032d6                EVSYS_2_Handler
-                0x00000000000032d6                SERCOM2_OTHER_Handler
-                0x00000000000032d6                FREQM_Handler
-                0x00000000000032d6                TC0_Handler
-                0x00000000000032d6                TCC0_MC1_Handler
-                0x00000000000032d6                DMAC_3_Handler
-                0x00000000000032d6                RAMECC_Handler
-                0x00000000000032d6                TC5_Handler
-                0x00000000000032d6                SERCOM2_0_Handler
-                0x00000000000032d6                AES_Handler
-                0x00000000000032d6                ICM_Handler
-                0x00000000000032d6                TCC0_MC2_Handler
+                0x00000000000031fa        0x2 build/sam_e51_cnano/production/_ext/570918426/interrupts.o
+                0x00000000000031fa                EIC_EXTINT_9_Handler
+                0x00000000000031fa                TCC0_MC5_Handler
+                0x00000000000031fa                SVCall_Handler
+                0x00000000000031fa                SERCOM0_2_Handler
+                0x00000000000031fa                USB_SOF_HSOF_Handler
+                0x00000000000031fa                TCC4_OTHER_Handler
+                0x00000000000031fa                TCC2_MC2_Handler
+                0x00000000000031fa                EVSYS_0_Handler
+                0x00000000000031fa                TRNG_Handler
+                0x00000000000031fa                TC2_Handler
+                0x00000000000031fa                USB_TRCPT0_Handler
+                0x00000000000031fa                DAC_OTHER_Handler
+                0x00000000000031fa                AC_Handler
+                0x00000000000031fa                DAC_EMPTY_0_Handler
+                0x00000000000031fa                DMAC_OTHER_Handler
+                0x00000000000031fa                EIC_EXTINT_5_Handler
+                0x00000000000031fa                SERCOM3_1_Handler
+                0x00000000000031fa                SysTick_Handler
+                0x00000000000031fa                SERCOM4_OTHER_Handler
+                0x00000000000031fa                SERCOM3_2_Handler
+                0x00000000000031fa                EIC_EXTINT_6_Handler
+                0x00000000000031fa                PendSV_Handler
+                0x00000000000031fa                TCC4_MC0_Handler
+                0x00000000000031fa                EVSYS_3_Handler
+                0x00000000000031fa                QSPI_Handler
+                0x00000000000031fa                TCC2_MC0_Handler
+                0x00000000000031fa                PDEC_OTHER_Handler
+                0x00000000000031fa                TCC3_MC0_Handler
+                0x00000000000031fa                PDEC_MC1_Handler
+                0x00000000000031fa                TCC2_MC1_Handler
+                0x00000000000031fa                OSCCTRL_XOSC1_Handler
+                0x00000000000031fa                PDEC_MC0_Handler
+                0x00000000000031fa                EIC_EXTINT_4_Handler
+                0x00000000000031fa                EIC_EXTINT_7_Handler
+                0x00000000000031fa                SERCOM0_OTHER_Handler
+                0x00000000000031fa                EVSYS_OTHER_Handler
+                0x00000000000031fa                SERCOM0_0_Handler
+                0x00000000000031fa                SERCOM4_0_Handler
+                0x00000000000031fa                TCC1_MC0_Handler
+                0x00000000000031fa                SERCOM1_OTHER_Handler
+                0x00000000000031fa                TCC2_OTHER_Handler
+                0x00000000000031fa                EIC_EXTINT_11_Handler
+                0x00000000000031fa                SUPC_BODDET_Handler
+                0x00000000000031fa                EIC_EXTINT_14_Handler
+                0x00000000000031fa                OSC32KCTRL_Handler
+                0x00000000000031fa                EVSYS_1_Handler
+                0x00000000000031fa                TCC4_MC1_Handler
+                0x00000000000031fa                DMAC_0_Handler
+                0x00000000000031fa                SUPC_OTHER_Handler
+                0x00000000000031fa                WDT_Handler
+                0x00000000000031fa                CAN0_Handler
+                0x00000000000031fa                EIC_EXTINT_15_Handler
+                0x00000000000031fa                EIC_EXTINT_1_Handler
+                0x00000000000031fa                TCC3_MC1_Handler
+                0x00000000000031fa                TC4_Handler
+                0x00000000000031fa                TC1_Handler
+                0x00000000000031fa                TCC1_MC1_Handler
+                0x00000000000031fa                EIC_EXTINT_0_Handler
+                0x00000000000031fa                TCC1_OTHER_Handler
+                0x00000000000031fa                SERCOM4_1_Handler
+                0x00000000000031fa                TC3_Handler
+                0x00000000000031fa                Dummy_Handler
+                0x00000000000031fa                DAC_RESRDY_0_Handler
+                0x00000000000031fa                DMAC_2_Handler
+                0x00000000000031fa                TCC0_MC4_Handler
+                0x00000000000031fa                USB_TRCPT1_Handler
+                0x00000000000031fa                SERCOM0_1_Handler
+                0x00000000000031fa                TCC0_MC3_Handler
+                0x00000000000031fa                EIC_EXTINT_12_Handler
+                0x00000000000031fa                OSCCTRL_DPLL0_Handler
+                0x00000000000031fa                PM_Handler
+                0x00000000000031fa                OSCCTRL_DFLL_Handler
+                0x00000000000031fa                DAC_RESRDY_1_Handler
+                0x00000000000031fa                DMAC_1_Handler
+                0x00000000000031fa                USB_OTHER_Handler
+                0x00000000000031fa                CAN1_Handler
+                0x00000000000031fa                TCC0_OTHER_Handler
+                0x00000000000031fa                EIC_EXTINT_10_Handler
+                0x00000000000031fa                TCC1_MC3_Handler
+                0x00000000000031fa                OSCCTRL_XOSC0_Handler
+                0x00000000000031fa                TCC0_MC0_Handler
+                0x00000000000031fa                EIC_EXTINT_2_Handler
+                0x00000000000031fa                SDHC0_Handler
+                0x00000000000031fa                SERCOM1_1_Handler
+                0x00000000000031fa                I2S_Handler
+                0x00000000000031fa                PCC_Handler
+                0x00000000000031fa                TCC3_OTHER_Handler
+                0x00000000000031fa                EIC_EXTINT_13_Handler
+                0x00000000000031fa                SERCOM1_0_Handler
+                0x00000000000031fa                PUKCC_Handler
+                0x00000000000031fa                SERCOM2_1_Handler
+                0x00000000000031fa                SERCOM1_2_Handler
+                0x00000000000031fa                SERCOM3_0_Handler
+                0x00000000000031fa                SERCOM4_2_Handler
+                0x00000000000031fa                TCC1_MC2_Handler
+                0x00000000000031fa                ADC1_RESRDY_Handler
+                0x00000000000031fa                NVMCTRL_1_Handler
+                0x00000000000031fa                SERCOM2_2_Handler
+                0x00000000000031fa                DAC_EMPTY_1_Handler
+                0x00000000000031fa                ADC1_OTHER_Handler
+                0x00000000000031fa                OSCCTRL_DPLL1_Handler
+                0x00000000000031fa                EIC_EXTINT_3_Handler
+                0x00000000000031fa                SERCOM3_OTHER_Handler
+                0x00000000000031fa                EIC_EXTINT_8_Handler
+                0x00000000000031fa                NVMCTRL_0_Handler
+                0x00000000000031fa                ADC0_RESRDY_Handler
+                0x00000000000031fa                ADC0_OTHER_Handler
+                0x00000000000031fa                MCLK_Handler
+                0x00000000000031fa                EVSYS_2_Handler
+                0x00000000000031fa                SERCOM2_OTHER_Handler
+                0x00000000000031fa                FREQM_Handler
+                0x00000000000031fa                TC0_Handler
+                0x00000000000031fa                TCC0_MC1_Handler
+                0x00000000000031fa                DMAC_3_Handler
+                0x00000000000031fa                RAMECC_Handler
+                0x00000000000031fa                TC5_Handler
+                0x00000000000031fa                SERCOM2_0_Handler
+                0x00000000000031fa                AES_Handler
+                0x00000000000031fa                ICM_Handler
+                0x00000000000031fa                TCC0_MC2_Handler
 
-.text.NonMaskableInt_Handler%91
-                0x0000000000003396        0x2
+.text.NonMaskableInt_Handler%85
+                0x00000000000032ba        0x2
  .text.NonMaskableInt_Handler
-                0x0000000000003396        0x2 build/sam_e51_cnano/production/_ext/570918426/exceptions.o
-                0x0000000000003396                NonMaskableInt_Handler
+                0x00000000000032ba        0x2 build/sam_e51_cnano/production/_ext/570918426/exceptions.o
+                0x00000000000032ba                NonMaskableInt_Handler
 
-.text.HardFault_Handler%92
-                0x0000000000003398        0x2
+.text.HardFault_Handler%86
+                0x00000000000032bc        0x2
  .text.HardFault_Handler
-                0x0000000000003398        0x2 build/sam_e51_cnano/production/_ext/570918426/exceptions.o
-                0x0000000000003398                HardFault_Handler
+                0x00000000000032bc        0x2 build/sam_e51_cnano/production/_ext/570918426/exceptions.o
+                0x00000000000032bc                HardFault_Handler
 
-.text.DebugMonitor_Handler%93
-                0x000000000000339a        0x2
+.text.DebugMonitor_Handler%87
+                0x00000000000032be        0x2
  .text.DebugMonitor_Handler
-                0x000000000000339a        0x2 build/sam_e51_cnano/production/_ext/570918426/exceptions.o
-                0x000000000000339a                DebugMonitor_Handler
+                0x00000000000032be        0x2 build/sam_e51_cnano/production/_ext/570918426/exceptions.o
+                0x00000000000032be                DebugMonitor_Handler
 
-.text.MemoryManagement_Handler%94
-                0x000000000000339c        0x2
+.text.MemoryManagement_Handler%88
+                0x00000000000032c0        0x2
  .text.MemoryManagement_Handler
-                0x000000000000339c        0x2 build/sam_e51_cnano/production/_ext/570918426/exceptions.o
-                0x000000000000339c                MemoryManagement_Handler
+                0x00000000000032c0        0x2 build/sam_e51_cnano/production/_ext/570918426/exceptions.o
+                0x00000000000032c0                MemoryManagement_Handler
 
-.text.BusFault_Handler%95
-                0x000000000000339e        0x2
+.text.BusFault_Handler%89
+                0x00000000000032c2        0x2
  .text.BusFault_Handler
-                0x000000000000339e        0x2 build/sam_e51_cnano/production/_ext/570918426/exceptions.o
-                0x000000000000339e                BusFault_Handler
+                0x00000000000032c2        0x2 build/sam_e51_cnano/production/_ext/570918426/exceptions.o
+                0x00000000000032c2                BusFault_Handler
 
-.text.UsageFault_Handler%96
-                0x00000000000033a0        0x2
+.text.UsageFault_Handler%90
+                0x00000000000032c4        0x2
  .text.UsageFault_Handler
-                0x00000000000033a0        0x2 build/sam_e51_cnano/production/_ext/570918426/exceptions.o
-                0x00000000000033a0                UsageFault_Handler
+                0x00000000000032c4        0x2 build/sam_e51_cnano/production/_ext/570918426/exceptions.o
+                0x00000000000032c4                UsageFault_Handler
 
-.text.Dummy_App_Func%97
-                0x00000000000033a2        0x2
+.text.Dummy_App_Func%91
+                0x00000000000032c6        0x2
  .text.Dummy_App_Func
-                0x00000000000033a2        0x2 build/sam_e51_cnano/production/_ext/570918426/startup_xc32.o
-                0x00000000000033a2                _on_reset
-                0x00000000000033a2                _on_bootstrap
-                0x00000000000033a2                __xc32_on_reset
-                0x00000000000033a2                Dummy_App_Func
-                0x00000000000033a2                __xc32_on_bootstrap
+                0x00000000000032c6        0x2 build/sam_e51_cnano/production/_ext/570918426/startup_xc32.o
+                0x00000000000032c6                _on_reset
+                0x00000000000032c6                _on_bootstrap
+                0x00000000000032c6                __xc32_on_reset
+                0x00000000000032c6                Dummy_App_Func
+                0x00000000000032c6                __xc32_on_bootstrap
 
-.text.__dummy%98
-                0x00000000000033a4        0x2
- .text.__dummy  0x00000000000033a4        0x2 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-musl.a(__libc_start_main.o)
-                0x00000000000033a4                __init_stdio
-                0x00000000000033a4                __init_host
+.text.__dummy%92
+                0x00000000000032c8        0x2
+ .text.__dummy  0x00000000000032c8        0x2 c:/program files/microchip/xc32/v4.45/bin/bin/../../lib/gcc/pic32c/8.3.1/../../../../pic32c/lib/thumb/v7e-m+fp/hard\libc-musl.a(__libc_start_main.o)
+                0x00000000000032c8                __init_stdio
+                0x00000000000032c8                __init_host

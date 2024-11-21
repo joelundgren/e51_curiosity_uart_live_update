@@ -11,6 +11,9 @@
             <itemPath>../src/config/sam_e51_cnano/bootloader/bootloader_interrupt.h</itemPath>
             <itemPath>../src/config/sam_e51_cnano/bootloader/bootloader_common.h</itemPath>
           </logicalFolder>
+          <logicalFolder name="bsp" displayName="bsp" projectFiles="true">
+            <itemPath>../src/config/sam_e51_cnano/bsp/bsp.h</itemPath>
+          </logicalFolder>
           <logicalFolder name="f1" displayName="peripheral" projectFiles="true">
             <logicalFolder name="f1" displayName="clock" projectFiles="true">
               <itemPath>../src/config/sam_e51_cnano/peripheral/clock/plib_clock.h</itemPath>
@@ -202,6 +205,9 @@
             <itemPath>../src/config/sam_e51_cnano/bootloader/bootloader_uart.c</itemPath>
             <itemPath>../src/config/sam_e51_cnano/bootloader/bootloader_common.c</itemPath>
           </logicalFolder>
+          <logicalFolder name="bsp" displayName="bsp" projectFiles="true">
+            <itemPath>../src/config/sam_e51_cnano/bsp/bsp.c</itemPath>
+          </logicalFolder>
           <logicalFolder name="f1" displayName="peripheral" projectFiles="true">
             <logicalFolder name="f1" displayName="clock" projectFiles="true">
               <itemPath>../src/config/sam_e51_cnano/peripheral/clock/plib_clock.c</itemPath>
@@ -247,6 +253,7 @@
   </logicalFolder>
   <sourceRootList>
     <Elem>../src</Elem>
+    <Elem>../../hex</Elem>
   </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
@@ -1071,6 +1078,8 @@
         <property key="memories.programmemory" value="true"/>
         <property key="memories.programmemory.ranges" value="0-fffff"/>
         <property key="poweroptions.powerenable" value="false"/>
+        <property key="programmerToGoFilePath"
+                  value="C:/Users/surface/Desktop/Saile Gauge/gh/e51_curiosity_uart_live_update/e51_uart_fail_safe_bootloader/firmware/sam_e51_cnano.X/debug/sam_e51_cnano/sam_e51_cnano_ptg"/>
         <property key="programoptions.eraseb4program" value="true"/>
         <property key="programoptions.preservedataflash" value="false"/>
         <property key="programoptions.preservedataflash.ranges"

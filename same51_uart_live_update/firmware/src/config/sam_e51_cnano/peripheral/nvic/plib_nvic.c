@@ -80,9 +80,6 @@ void NVIC_Initialize( void )
     /* Enable Bus fault */
     SCB->SHCSR |= (SCB_SHCSR_BUSFAULTENA_Msk);
 
-    /* Enable memory management fault */
-    SCB->SHCSR |= (SCB_SHCSR_MEMFAULTENA_Msk);
-
 }
 
 void NVIC_INT_Enable( void )

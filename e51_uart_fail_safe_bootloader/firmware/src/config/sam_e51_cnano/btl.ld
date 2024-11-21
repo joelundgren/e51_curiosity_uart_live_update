@@ -61,7 +61,7 @@ ENTRY(__XC32_RESET_HANDLER_NAME)
                      (Rounded of to nearest erase boundary) whichever is
                      greater.
  */
-#define ROM_SIZE  8196
+#define ROM_SIZE  8192
 
 #if (ROM_SIZE > 0x100000)
     #  error ROM_SIZE is greater than the max size 0x100000

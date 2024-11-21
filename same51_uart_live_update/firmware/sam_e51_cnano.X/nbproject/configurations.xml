@@ -285,8 +285,8 @@
         <platform>3</platform>
       </toolsSet>
       <packs>
-        <pack name="SAME51_DFP" vendor="Microchip" version="3.7.242"/>
         <pack name="CMSIS" vendor="ARM" version="5.8.0"/>
+        <pack name="SAME51_DFP" vendor="Microchip" version="3.7.242"/>
       </packs>
       <ScriptingSettings>
       </ScriptingSettings>
@@ -425,7 +425,7 @@
         <property key="oXC32ld-extra-opts" value=""/>
         <property key="optimization-level" value=""/>
         <property key="preprocessor-macros"
-                  value="ROM_LENGTH=0xfe000;ROM_ORIGIN=0x2000"/>
+                  value="ROM_ORIGIN=0x2000;ROM_LENGTH=0xfe000"/>
         <property key="remove-unused-sections" value="true"/>
         <property key="report-memory-usage" value="false"/>
         <property key="serial-length" value=""/>

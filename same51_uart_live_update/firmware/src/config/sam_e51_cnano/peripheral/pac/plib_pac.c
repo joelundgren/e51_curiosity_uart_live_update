@@ -62,7 +62,7 @@
 
 
 
-volatile static PAC_CALLBACK_OBJ pacCallbackObject;
+static PAC_CALLBACK_OBJ pacCallbackObject;
 
 // *****************************************************************************
 // *****************************************************************************
@@ -101,12 +101,11 @@ void PAC_CallbackRegister( PAC_CALLBACK callback, uintptr_t context )
     pacCallbackObject.context = context;
 }
 
-void __attribute__((used)) PAC_InterruptHandler( void )
+void PAC_InterruptHandler( void )
 {
     if (pacCallbackObject.callback != NULL)
     {
-        uintptr_t context = pacCallbackObject.context;
-        pacCallbackObject.callback(context);
+        pacCallbackObject.callback(pacCallbackObject.context);
     }
 
     /* Clear all interrupt flags to remove active interrupt requests */

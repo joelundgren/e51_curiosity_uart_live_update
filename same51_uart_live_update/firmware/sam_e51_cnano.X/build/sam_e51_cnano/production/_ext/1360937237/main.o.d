@@ -1,6 +1,6 @@
 build/sam_e51_cnano/production/_ext/1360937237/main.o: ../src/main.c \
  ../src/config/sam_e51_cnano/definitions.h \
- ../src/config/sam_e51_cnano/bsp/bsp.h \
+ ../src/config/sam_e51_cnano/peripheral/nvmctrl/plib_nvmctrl.h \
  ../src/config/sam_e51_cnano/device.h \
  ../src/packs/ATSAME51J20A_DFP/same51j20a.h \
  ../src/packs/CMSIS/CMSIS/Core/Include/core_cm4.h \
@@ -106,7 +106,7 @@ build/sam_e51_cnano/production/_ext/1360937237/main.o: ../src/main.c \
  ../src/config/sam_e51_cnano/device.h \
  ../src/config/sam_e51_cnano/toolchain_specifics.h \
  ../src/packs/CMSIS/CMSIS/Core/Include/cmsis_compiler.h \
- ../src/config/sam_e51_cnano/peripheral/nvmctrl/plib_nvmctrl.h \
+ ../src/config/sam_e51_cnano/bsp/bsp.h \
  ../src/config/sam_e51_cnano/peripheral/evsys/plib_evsys.h \
  ../src/config/sam_e51_cnano/peripheral/port/plib_port.h \
  ../src/config/sam_e51_cnano/peripheral/clock/plib_clock.h \
@@ -123,7 +123,7 @@ build/sam_e51_cnano/production/_ext/1360937237/main.o: ../src/main.c \
 
 ../src/config/sam_e51_cnano/definitions.h:
 
-../src/config/sam_e51_cnano/bsp/bsp.h:
+../src/config/sam_e51_cnano/peripheral/nvmctrl/plib_nvmctrl.h:
 
 ../src/config/sam_e51_cnano/device.h:
 
@@ -335,7 +335,7 @@ build/sam_e51_cnano/production/_ext/1360937237/main.o: ../src/main.c \
 
 ../src/packs/CMSIS/CMSIS/Core/Include/cmsis_compiler.h:
 
-../src/config/sam_e51_cnano/peripheral/nvmctrl/plib_nvmctrl.h:
+../src/config/sam_e51_cnano/bsp/bsp.h:
 
 ../src/config/sam_e51_cnano/peripheral/evsys/plib_evsys.h:
 

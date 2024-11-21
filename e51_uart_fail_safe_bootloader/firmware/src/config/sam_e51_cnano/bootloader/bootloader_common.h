@@ -62,7 +62,7 @@
 #define PAGES_IN_ERASE_BLOCK                    (ERASE_BLOCK_SIZE / PAGE_SIZE)
 
 
-#define BOOTLOADER_SIZE                         8196
+#define BOOTLOADER_SIZE                         8192
 
 /* Starting location of Bootloader in Inactive bank */
 #define INACTIVE_BANK_OFFSET                    (FLASH_LENGTH / 2U)
@@ -72,7 +72,7 @@
 #define FLASH_END_ADDRESS                       (INACTIVE_BANK_START + INACTIVE_BANK_OFFSET)
 
 
-#define APP_START_ADDRESS                       (0x4000U)
+#define APP_START_ADDRESS                       (0x2000U)
 
 
 #define BTL_TRIGGER_RAM_START                   0x20000000

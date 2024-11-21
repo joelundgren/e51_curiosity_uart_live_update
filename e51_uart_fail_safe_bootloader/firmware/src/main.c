@@ -52,6 +52,14 @@
 #include <stdbool.h>                    // Defines true
 #include <stdlib.h>                     // Defines EXIT_FAILURE
 #include "definitions.h"                // SYS function prototypes
+#include <stdint.h>
+#include "definitions.h"  // Include necessary hardware definitions
+
+#define LED_BLINK_INTERVAL_MS 1000 // Blink interval in milliseconds
+#define SYSTICK_PERIOD_MS 100      // Systick period in milliseconds
+
+static uint32_t elapsedTimeMs = 0;       // Tracks total elapsed time in ms
+static uint32_t ledToggleTimestamp = 0; // Timestamp for LED toggle
 
 #define BTL_TRIGGER_PATTERN (0x5048434DUL)
 
@@ -77,11 +85,11 @@ bool bootloader_Trigger(void)
         return true;
     }
 
-    /* Check for Switch press to enter Bootloader 
-    if (SWITCH_Get() == 0)
+    // Check for Switch press to enter Bootloader 
+    if (SW0_Get() == 0)
     {
         return true;
-    }*/
+    }
 
     return false;
 }
@@ -96,9 +104,24 @@ int main ( void )
 {
     /* Initialize all modules */
     SYS_Initialize ( NULL );
+    SYSTICK_TimerInitialize();
+    SYSTICK_TimerStart();
 
     while (true)
     {
+// Check if the Systick period has elapsed
+        if (SYSTICK_TimerPeriodHasExpired())
+        {
+            elapsedTimeMs += SYSTICK_PERIOD_MS; // Accumulate elapsed time
+        }
+
+        // Check if the blink interval has elapsed
+        if ((elapsedTimeMs - ledToggleTimestamp) >= LED_BLINK_INTERVAL_MS)
+        {
+            LED0_Toggle();                   // Toggle the LED
+            ledToggleTimestamp = elapsedTimeMs; // Update the timestamp
+        }
+        
         bootloader_UART_Tasks();
     }
     /* Execution should not come here during normal operation */

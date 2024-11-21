@@ -2,7 +2,7 @@ build/sam_e51_cnano/production/_ext/48416434/bootloader_common.o: \
  ../src/config/sam_e51_cnano/bootloader/bootloader_common.c \
  ../src/config/sam_e51_cnano/bootloader/bootloader_common.h \
  ../src/config/sam_e51_cnano/definitions.h \
- ../src/config/sam_e51_cnano/peripheral/nvmctrl/plib_nvmctrl.h \
+ ../src/config/sam_e51_cnano/bsp/bsp.h \
  ../src/config/sam_e51_cnano/device.h \
  ../src/packs/ATSAME51J20A_DFP/same51j20a.h \
  ../src/packs/CMSIS/CMSIS/Core/Include/core_cm4.h \
@@ -108,6 +108,7 @@ build/sam_e51_cnano/production/_ext/48416434/bootloader_common.o: \
  ../src/config/sam_e51_cnano/device.h \
  ../src/config/sam_e51_cnano/toolchain_specifics.h \
  ../src/packs/CMSIS/CMSIS/Core/Include/cmsis_compiler.h \
+ ../src/config/sam_e51_cnano/peripheral/nvmctrl/plib_nvmctrl.h \
  ../src/config/sam_e51_cnano/peripheral/evsys/plib_evsys.h \
  ../src/config/sam_e51_cnano/bootloader/bootloader_uart.h \
  ../src/config/sam_e51_cnano/peripheral/port/plib_port.h \
@@ -125,7 +126,7 @@ build/sam_e51_cnano/production/_ext/48416434/bootloader_common.o: \
 
 ../src/config/sam_e51_cnano/definitions.h:
 
-../src/config/sam_e51_cnano/peripheral/nvmctrl/plib_nvmctrl.h:
+../src/config/sam_e51_cnano/bsp/bsp.h:
 
 ../src/config/sam_e51_cnano/device.h:
 
@@ -336,6 +337,8 @@ build/sam_e51_cnano/production/_ext/48416434/bootloader_common.o: \
 ../src/config/sam_e51_cnano/toolchain_specifics.h:
 
 ../src/packs/CMSIS/CMSIS/Core/Include/cmsis_compiler.h:
+
+../src/config/sam_e51_cnano/peripheral/nvmctrl/plib_nvmctrl.h:
 
 ../src/config/sam_e51_cnano/peripheral/evsys/plib_evsys.h:
 

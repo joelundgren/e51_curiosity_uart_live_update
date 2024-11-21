@@ -170,12 +170,12 @@ void APP_Tasks ( void )
                 if ((nvmctrlStatus & NVMCTRL_AFIRST_MSK) != 0)
                 {
                     RTC_Timer32Compare0Set(PERIOD_500MS); // Application running from NVM Flash BANK A
-                    SERCOM5_USART_Write((uint8_t*)messageA, 43);
+                    //SERCOM5_USART_Write((uint8_t*)messageA, 43);
                 }
                 else
                 {
                     RTC_Timer32Compare0Set(PERIOD_4S); // Application running from NVM Flash BANK B
-                    SERCOM5_USART_Write((uint8_t*)messageB, 43);
+                    //SERCOM5_USART_Write((uint8_t*)messageB, 43);
                 }
 
                 changeSamplingRate  = false;
@@ -190,12 +190,12 @@ void APP_Tasks ( void )
                 if ((nvmctrlStatus & NVMCTRL_AFIRST_MSK) != 0)
                 {
                     RTC_Timer32Compare0Set(PERIOD_500MS); // Application running from NVM Flash BANK A
-                    SERCOM5_USART_Write((uint8_t*)messageA, 43);
+                    //SERCOM5_USART_Write((uint8_t*)messageA, 43);
                 }
                 else
                 {
                     RTC_Timer32Compare0Set(PERIOD_4S); // Application running from NVM Flash BANK B
-                    SERCOM5_USART_Write((uint8_t*)messageA, 43);
+                    //SERCOM5_USART_Write((uint8_t*)messageB, 43);
                 }
 
                 LED1_Off();

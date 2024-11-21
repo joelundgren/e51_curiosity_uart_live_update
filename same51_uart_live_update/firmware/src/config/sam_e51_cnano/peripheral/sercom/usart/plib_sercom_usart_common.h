@@ -279,31 +279,31 @@ typedef void (*SERCOM_USART_CALLBACK)( uintptr_t context );
 
 typedef struct
 {
-    void *                              txBuffer;
+    void *                   txBuffer;
 
-    size_t                              txSize;
+    size_t                               txSize;
 
-    size_t                              txProcessedSize;
+    volatile size_t                      txProcessedSize;
 
-    SERCOM_USART_CALLBACK               txCallback;
+    SERCOM_USART_CALLBACK                txCallback;
 
-    uintptr_t                           txContext;
+    volatile uintptr_t                   txContext;
 
-    bool                                txBusyStatus;
+    volatile bool                        txBusyStatus;
 
-    void *                              rxBuffer;
+    void *                   rxBuffer;
 
-    size_t                              rxSize;
+    size_t                               rxSize;
 
-    size_t                              rxProcessedSize;
+    volatile size_t                      rxProcessedSize;
 
-    SERCOM_USART_CALLBACK               rxCallback;
+    SERCOM_USART_CALLBACK                rxCallback;
 
-    uintptr_t                           rxContext;
+    volatile uintptr_t                   rxContext;
 
-    bool                                rxBusyStatus;
+    volatile bool                        rxBusyStatus;
 
-    USART_ERROR                         errorStatus;
+    volatile USART_ERROR                 errorStatus;
 
 } SERCOM_USART_OBJECT;
 
@@ -364,9 +364,9 @@ typedef struct
 
     uintptr_t                                           wrContext;
 
-    uint32_t                                            wrInIndex;
+    volatile uint32_t                                   wrInIndex;
 
-    uint32_t                                            wrOutIndex;
+    volatile uint32_t                                   wrOutIndex;
 
     uint32_t                                            wrBufferSize;
 
@@ -380,9 +380,9 @@ typedef struct
 
     uintptr_t                                           rdContext;
 
-    uint32_t                                            rdInIndex;
+    volatile uint32_t                                   rdInIndex;
 
-    uint32_t                                            rdOutIndex;
+    volatile uint32_t                                   rdOutIndex;
 
     uint32_t                                            rdBufferSize;
 
@@ -392,7 +392,7 @@ typedef struct
 
     bool                                                isRdNotifyPersistently;
 
-    USART_ERROR                                         errorStatus;
+    volatile USART_ERROR                                errorStatus;
 
 } SERCOM_USART_RING_BUFFER_OBJECT;
 
